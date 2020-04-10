@@ -17,7 +17,7 @@ now Going to
 3. do django work - 5 hrs 
 should be all done by 1-2 am
 
-@3:54 class diagrams hare done 70% completion by me - sent to @kris
+@3:54 class diagrams are done 70% completion by me - sent to @kris
 
 -feel sleepy - but will continue to work -- will take a nap till 4:30pm 
 @5:10pm
