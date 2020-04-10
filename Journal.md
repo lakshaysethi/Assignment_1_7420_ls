@@ -31,3 +31,9 @@ continueing work sequence from line 14
 @5:37
 now working on task # 2
 - working on  `getTimeslotBooking(String licenceNumber)`(20 marks) function - I have already coded it using other fucntions so its simple to implement, however I need to use it somewhere as well so I did use it in the `— bookTimeslot(String licenceNumber, String day, int hour)` (20marks) function and now just need to test if everything still works time.Now() = 5:56pm
+    - yes everything still works 
+@6:02pm
+- Now working on "Get a list of summary data for timeslot bookings on a given day  `getSlots(String day) `Return a sequence of hours, bookingCounts ordered by hour"
+    - so this will be basically `ArrayList<Slot> daySlots getSlots(String day)` in my code - ok 
+    
+
