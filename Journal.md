@@ -24,5 +24,5 @@ should be all done by 1-2 am
     - just woke up
     - got banana milk musli , put on Music - im fully awake now :)
     
-- need to also add the class diagram attributes to readme.md of this repo.
+5.need to also add the class diagram attributes to readme.md of this repo.
 continueing work sequence from line 14
