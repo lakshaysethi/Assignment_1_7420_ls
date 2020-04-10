@@ -16,3 +16,7 @@ now Going to
 2. work on Mobile dev assignemnt for 2 hrs- try to complete it asap to submit before tonight.
 3. do django work - 5 hrs 
 should be all done by 1-2 am
+
+@3:54 class diagrams hare done 70% completion by me - sent to @kris
+
+-feel sleepy - but will continue to work -- will take a nap till 4:30pm 
