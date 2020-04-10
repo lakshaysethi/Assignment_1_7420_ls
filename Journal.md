@@ -53,11 +53,7 @@ Now
 @8:46   
 
 - just now I commited the hotspot design 
-
-
-
-
-https://i.imgur.com/iaZNRDsr.jpg
+[hotspot](https://i.imgur.com/iaZNRDsr.jpg)
 
     
     
