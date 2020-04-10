@@ -30,3 +30,4 @@ continueing work sequence from line 14
 
 @5:37
 now working on task # 2
+- working on  `getTimeslotBooking(String licenceNumber)`(20 marks) function - I have already coded it using other fucntions so its simple to implement, however I need to use it somewhere as well so I did use it in the `— bookTimeslot(String licenceNumber, String day, int hour)` (20marks) function and now just need to test if everything still works time.Now() = 5:56pm
