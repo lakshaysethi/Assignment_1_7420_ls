@@ -73,7 +73,15 @@ still working on the Mobile assignment
 - now its time for django I need to learn and make the Instagram Clone
 
 -- I will take a Bio Break now will return at 10:30pm
+    -I am back I thought i took a lot of time in the shower but wow it was only 15 mins cool
 
-    
+-- so I had planned to do django for 5 hrs today - time now is - 1030 + 5 = 3:30am cool so Ill do that 
+
+
+
+#----Starting session django web Apps Assignment 1 ---10:30 to 03:30am <br>
+todo 
+Read the assignment for 5 mins before 10:45pm [] Failed - document not found 
+
     
 
