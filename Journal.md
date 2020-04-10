@@ -20,3 +20,9 @@ should be all done by 1-2 am
 @3:54 class diagrams hare done 70% completion by me - sent to @kris
 
 -feel sleepy - but will continue to work -- will take a nap till 4:30pm 
+@5:10pm
+    - just woke up
+    - got banana milk musli , put on Music - im fully awake now :)
+    
+- need to also add the class diagram attributes to readme.md of this repo.
+continueing work sequence from line 14
