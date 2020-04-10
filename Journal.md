@@ -46,6 +46,8 @@ Now
 - need to learn about how to use TableLayout damn
 - so this table layout is kinda you know uses a lot of hard coding - i want to be able to choose the number of rows and columns programatically and just go from there @ 6:34pm 
 - I am stuck in research mode!-this might take some time which I dont want to waste
+- according to this website I can Do it programatically -https://technotzz.wordpress.com/2011/11/04/android-dynamically-add-rows-to-table-layout/ time.now()= 6:46pm - TOOK 1/2 hr - this felt like just 2-3 minutes 
+
 
 
     
