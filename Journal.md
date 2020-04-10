@@ -55,6 +55,11 @@ Now
 - just now I commited the hotspot design 
 [hotspot](https://i.imgur.com/iaZNRDsr.jpg)
 
+
+@9:09pm    
+still working on the Mobile assignment 
+- i added super user abilities and forcing the right orientation till 9:15pm
+
     
     
 
