@@ -12,7 +12,7 @@ have been working on android assignment for the last few hours
     -Need to be serious about web dev assignment
     - need to talk to Kris more - live 
 now Going to 
-1. make Class Diagrams for simple Instagram and send it to Kris - by 3:45
+1. make Class Diagrams for simple Instagram and send it to Kris - by 3:45 DONE
 2. work on Mobile dev assignemnt for 2 hrs- try to complete it asap to submit before tonight.
 3. do django work - 5 hrs 
 should be all done by 1-2 am
@@ -24,5 +24,9 @@ should be all done by 1-2 am
     - just woke up
     - got banana milk musli , put on Music - im fully awake now :)
     
-4.need to also add the class diagram attributes to readme.md of this repo.
+4.need to also add the class diagram attributes to readme.md of this repo. (DONE@ 5:36)
+
 continueing work sequence from line 14
+
+@5:37
+now working on task # 2
