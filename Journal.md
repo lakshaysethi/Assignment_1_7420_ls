@@ -53,12 +53,26 @@ Now
 @8:46   
 
 - just now I commited the hotspot design 
-[hotspot](https://i.imgur.com/iaZNRDsr.jpg)
+![hotspot](https://i.imgur.com/iaZNRDsr.jpg)
 
 
 @9:09pm    
 still working on the Mobile assignment 
 - i added super user abilities and forcing the right orientation till 9:15pm
+- shared the code with friends to get feedback while also marking it by myself for last 45 mins - this is too much time for this task Time now is 10:05pm 
+- need to write Unit tests for the android app- but I do not know anything about unit tests - i need to learn it.- I will do it later.
+-also it would be good if I sent an email to Jong Casy telling him i am finished with the app :)
+- this was a simple app but it took too much time for me to make it.
+- I can make this app better and improve it.
+
+
+- I want to make more android apps- I like the challenge and I like to learn and create but there has to be a challenge and it should be achieveable 
+- this project put me in a flow state.
+
+@10:10pm
+- now its time for django I need to learn and make the Instagram Clone
+
+-- I will take a Bio Break now will return at 10:30pm
 
     
     
