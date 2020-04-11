@@ -134,4 +134,7 @@ git add .
 git commit -m "fixed untracked files"
 
 got this from stackoverflow 
+still .vs code files were showing up so added to gitignore worked now
+
+
 ```
