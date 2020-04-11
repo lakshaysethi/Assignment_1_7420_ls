@@ -84,4 +84,9 @@ todo
 Read the assignment for 5 mins before 10:45pm [] Failed - document not found 
 
     
-
+#11 Apr 2020 @11:40AM
+ the past 11-14 hours
+ 
+ --I am making python app that  an automatically writes my journal for me  
+ -- i am very distracted :( i am not focused 
+ --its 12:15 pm now and I have not made any progress yet
