@@ -84,8 +84,8 @@ todo
 Read the assignment for 5 mins before 10:45pm [] Failed - document not found 
 
     
-#11 Apr 2020 @11:40AM
- the past 11-14 hours
+# DAY START 11 Apr 2020 @11:40AM
+ the past 11-14 hours were a breeze 
  
  --I am making python app that  an automatically writes my journal for me  
  -- i am very distracted :( i am not focused 
@@ -101,7 +101,7 @@ Read the assignment for 5 mins before 10:45pm [] Failed - document not found
 6. 
  
 
-# starting to work on django web dev project 12:43pm
+starting to work on django web dev project 12:43pm 11 apr    
 Estimate will work till - 7pm
 ```
 == add friend/follower/following feature - 2:12 - 3:00pm 
