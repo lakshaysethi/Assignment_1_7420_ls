@@ -90,3 +90,13 @@ Read the assignment for 5 mins before 10:45pm [] Failed - document not found
  --I am making python app that  an automatically writes my journal for me  
  -- i am very distracted :( i am not focused 
  --its 12:15 pm now and I have not made any progress yet
+ 
+ -- I want to  make a list of projects that i want to do and finish
+#list of projects
+1. youtube clone with alex
+2. bootstrap course
+3. driver licence app
+4. Cloud computing app
+5. web dev app - Instagram clone with django
+6. 
+ 
