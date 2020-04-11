@@ -127,5 +127,11 @@ learnt how to use .gitignore files and how to setup a pycharm project with .giti
 ```
 @6pm- 7pm
 ```
-.
+finally got .gitignore to work using this 
+
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
+
+got this from stackoverflow 
 ```
