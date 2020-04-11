@@ -120,8 +120,12 @@ Unplanned break from 2:52pm to 4:00pm
 ==change/reset password 6:00 to 7:00
 
 ```
-@5pm ok starting again
+5pm- 6pm ok starting again
 ```
 I deleted all the unnecessary files in my django project
 learnt how to use .gitignore files and how to setup a pycharm project with .gitignore
+```
+@6pm- 7pm
+```
+.
 ```
