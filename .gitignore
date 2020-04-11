@@ -390,3 +390,4 @@ fabric.properties
 .idea/*
 *.pyc
 *.pyc
+.vscode/settings.json
