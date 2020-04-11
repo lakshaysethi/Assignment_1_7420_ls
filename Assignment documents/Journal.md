@@ -103,19 +103,25 @@ Read the assignment for 5 mins before 10:45pm [] Failed - document not found
 
 # starting to work on django web dev project 12:43pm
 Estimate will work till - 7pm
-
+```
 == add friend/follower/following feature - 2:12 - 3:00pm 
    -add  friend/follower/following list field to user model
    -get current logged in user
    -get selected user/ selected friend/follower/following
    -in database add the selected friend/follower/following to current user's friend/follower/following list
 |coud not find how to do it - taking beak now will be back and start again 
-
-#Unplanned break from 2:52pm to 4:00pm
-
+```
+Unplanned break from 2:52pm to 4:00pm
+```
 #Plan after break 
 == add friend/follower/following feature - 4:00pm - 5:00pm
 ==search post function should work 5:00 to 6:00 
 
 ==change/reset password 6:00 to 7:00
 
+```
+@5pm ok starting again
+```
+I deleted all the unnecessary files in my django project
+learnt how to use .gitignore files and how to setup a pycharm project with .gitignore
+```
