@@ -46,26 +46,6 @@ I want to collaborate with ppl and so development together
 I want to have more challenges like the Android assignment and the Java bank app assignment in which we have to make an app and there are clear instructions and achieveables- i really like the challenge and I can keep working for days withou stop on them. - i think it helps to have other students doing the same  ie making the same app as me.
 ```
 
-```
-I want to 
-```
-
-```
-I want to 
-```
-
-```
-I want to 
-```
-
-```
-I want to 
-```
-
-```
-I want to 
-```
-
 # 10 Apr 2020
 
 Now: 3:00pm
@@ -222,4 +202,8 @@ not much progress made :(
 
 
 # 12 April 2020
+
+its 5:23 pm now
+
+now I am working on django 
 
