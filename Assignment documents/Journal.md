@@ -205,5 +205,83 @@ not much progress made :(
 
 its 5:23 pm now
 
-now I am working on django 
+now I am working with django shell
+
+```python
+
+PS C:\Users\KL\Desktop\blogapp> python manage.py shell
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 22:45:29) [MSC v.1916 32 bit (Intel)] on 
+>>> from django.contrib.auth.models import User
+>>> from blog.models import Post
+>>> user1 = User.objects.first()
+>>> posts = Post.objects.all()
+>>> posts.filter(author = user1)           
+<QuerySet [<Post: Blog 1 First Post Content!!>, <Post: Blog 2 Second Post Content!!>]>
+>>> post4 = Post(title = 'blog4')               
+>>> post4
+<Post: blog4 >
+>>> post4.save()
+sqlite3.IntegrityError: NOT NULL constraint failed: blog_post.author_id
+django.db.utils.IntegrityError: NOT NULL constraint failed: blog_post.author_id
+>>> post4.author_id
+>>> post4.author_id = 14
+>>> post4.save()         
+>>> post4.date_posted
+datetime.datetime(2020, 4, 12, 4, 37, 20, 652798, tzinfo=<UTC>)
+>>> post4.author 
+<User: lakshay>
+>>> post4.author.email
+''
+>>> post4.author.password
+'pbkdf2_sha256$180000$tZ1ubThpNrof$eTJIKyVyBrNU0+S2M1BRhVPB16AC31KXn7vagm9VU9A='
+>>> post4.author.post_set
+<django.db.models.fields.related_descriptors.create_reverse_many_to_one_manager.<locals>.RelatedManager object at 0x00E972E0>
+>>> post4.author.post_set() # XXXXXXXXXXXXXXXX wrong
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: __call__() missing 1 required keyword-only argument: 'manager'
+>>> post4.author.post_set  
+<django.db.models.fields.related_descriptors.create_reverse_many_to_one_manager.<locals>.RelatedManager object at 0x00E97250>
+>>> post4.author.post_set.all() # right 
+<QuerySet [<Post: blog4 >]>
+>>> post4.author.post_set.first()
+<Post: blog4 >
+>>> for(user in User.objects.all()):
+>>> for user in User.objects.all():
+...     print(user)
+... 
+manas
+lakshay
+lakshay2
+lakshay3
+lakshay4
+lakshay5
+lakshay6
+lakshay7
+lakshay8
+lakshay9
+lakshay10
+lakshay11
+lakshay12
+>>> for user in User.objects.all():
+...     print(user.id) 
+... 
+1
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+>>> from django.contrib.auth.models import User
+>>> from blog.models import Post
+>>> Post.objects.first().__str__()
+'Blog 1 bymanas'
+```
 
