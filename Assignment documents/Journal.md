@@ -1,7 +1,77 @@
 Lakshay's Dev Journal :
+
+# My Goals: 
+
+(as on 8:27PM 11Apr 2020)
+
+My goals are:
+
+```
+I want to make an auto journal writer/ program that logs stuff and makes a readable file with important info while working on dev stuff
+```
+
+```
+I want to finish my android assignment and get good grades in it
+```
+
+```
+I want to work with alex like I did before and make a good assignment for Cloud apps dev calss
+```
+
+```
+I want to jearn django in and out and make many apps with it
+```
+
+```
+I want to make the driving app better anc connect it with database
+```
+
+```
+I want to make an app that helps people know about the queues(if there is one, and detais) at count down and new world so they can choose to go to the one which has the lowest wait time in these qurenteen days. 
+```
+
+```
+I want to make the youtube clone by following the tutorial at udemy
+```
+
+```
+I want to do many udemy,youtube,scrimba etc dev courses
+```
+
+```
+I want to collaborate with ppl and so development together
+```
+
+```
+I want to have more challenges like the Android assignment and the Java bank app assignment in which we have to make an app and there are clear instructions and achieveables- i really like the challenge and I can keep working for days withou stop on them. - i think it helps to have other students doing the same  ie making the same app as me.
+```
+
+```
+I want to 
+```
+
+```
+I want to 
+```
+
+```
+I want to 
+```
+
+```
+I want to 
+```
+
+```
+I want to 
+```
+
+# 10 Apr 2020
+
 Now: 3:00pm
 have been working on android assignment for the last few hours 
-10 Apr 2020 – Started @ 1:00PM on web Dev
+ – Started @ 1:00PM on web Dev
+
 - searched for examples and tutorials for web Dev ass1 - instagram clone with django
 - was following tutorial at https://www.youtube.com/watch?v=6jR6c16_DOs&list=PLBOh8f9FoHHjtZJFAYKQRT_sRunC5M0tA&index=4
 - it a bit old 
@@ -39,6 +109,7 @@ now working on task # 2
     - so this will be basically `ArrayList<Slot> daySlots getSlots(String day)` in my code - ok  
     - yeah that was easy - i had already implemented other methods that helped me  :)  `like slot.getDateString()` so this is also (DONE)     
     
+
 Now   
 @6:13pm   
 
@@ -83,14 +154,16 @@ still working on the Mobile assignment
 todo 
 Read the assignment for 5 mins before 10:45pm [] Failed - document not found 
 
-    
-# DAY START 11 Apr 2020 @11:40AM
+# 11 Apr 2020 
+
+DAY START @11:40AM
+
  the past 11-14 hours were a breeze 
- 
+
  --I am making python app that  an automatically writes my journal for me  
  -- i am very distracted :( i am not focused 
  --its 12:15 pm now and I have not made any progress yet
- 
+
  -- I want to  make a list of projects that i want to do and finish
 #list of projects
 1. youtube clone with alex
@@ -99,7 +172,7 @@ Read the assignment for 5 mins before 10:45pm [] Failed - document not found
 4. Cloud computing app
 5. web dev app - Instagram clone with django
 6. 
- 
+
 
 starting to work on django web dev project 12:43pm 11 apr    
 Estimate will work till - 7pm
@@ -144,53 +217,9 @@ session is over- it was not productive
 not much progress made :(
 
 ```
-# My Goals: (as on 8:27PM 11Apr 2020)
 
-My goals are:
 
-```
-I want to make an auto journal writer/ program that logs stuff and makes a readable file with important info while working on dev stuff
-```
-```
-I want to finish my android assignment and get good grades in it
-```
-```
-I want to work with alex like I did before and make a good assignment for Cloud apps dev calss
-```
-```
-I want to jearn django in and out and make many apps with it
-```
-```
-I want to make the driving app better anc connect it with database
-```
-```
-I want to make an app that helps people know about the queues(if there is one, and detais) at count down and new world so they can choose to go to the one which has the lowest wait time in these qurenteen days. 
-```
-```
-I want to make the youtube clone by following the tutorial at udemy
-```
-```
-I want to do many udemy,youtube,scrimba etc dev courses
-```
-```
-I want to collaborate with ppl and so development together
-```
-```
-I want to have more challenges like the Android assignment and the Java bank app assignment in which we have to make an app and there are clear instructions and achieveables- i really like the challenge and I can keep working for days withou stop on them. - i think it helps to have other students doing the same  ie making the same app as me.
-```
-```
-I want to 
-```
-```
-I want to 
-```
-```
-I want to 
-```
-```
-I want to 
-```
-```
-I want to 
-```
+
+
+# 12 April 2020
 
