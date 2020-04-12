@@ -1,0 +1,21 @@
+{%   extends 'blog/base.html' %}
+
+{% block content %}
+
+
+<div class="content-section">
+    <form method='POST' action="">
+        {% csrf_token %}
+
+        {{ form }}
+
+        <button class="btn btn-outline-info"type="submit" >  REGISTER  </button>
+
+
+
+
+    </form>
+
+    <small class="text-muted">Allready have an account?<a href="#" class="ml-2">Sign-In</a></small>
+
+</div>

@@ -7,14 +7,14 @@ from django.contrib.auth.models import User
 
 class Person(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    profile = models.OneToOneField(Profile, on_delete=models.CASCADE)
+#     profile = models.OneToOneField(Profile, on_delete=models.CASCADE)
     
 
 
 
-class Profile(models.Model):
-    followers = models.CharField(max_length=200)
-    following = models.CharField(max_length=200)
+# class Profile(models.Model):
+#     followers = models.CharField(max_length=200)
+#     following = models.CharField(max_length=200)
     
     
 
