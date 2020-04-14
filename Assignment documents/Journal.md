@@ -153,9 +153,9 @@ DAY START @11:40AM
 5. web dev app - Instagram clone with django
 6. 
 
-
 starting to work on django web dev project 12:43pm 11 apr    
 Estimate will work till - 7pm
+
 ```
 == add friend/follower/following feature - 2:12 - 3:00pm 
    -add  friend/follower/following list field to user model
@@ -253,35 +253,45 @@ TypeError: __call__() missing 1 required keyword-only argument: 'manager'
 manas
 lakshay
 lakshay2
-lakshay3
-lakshay4
-lakshay5
-lakshay6
-lakshay7
-lakshay8
-lakshay9
-lakshay10
-lakshay11
-lakshay12
+...
 >>> for user in User.objects.all():
 ...     print(user.id) 
 ... 
 1
 14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
+15...
 >>> from django.contrib.auth.models import User
 >>> from blog.models import Post
 >>> Post.objects.first().__str__()
 'Blog 1 bymanas'
 ```
 
+# 15 April 2020
+
+last 2 days have been bad
+
+now it is 4;27am
+
+i am using a time tracker to track all my time but i think it is not a substitute for this
+
+
+
+keeping a journal helps has a feature that is I record what I found that could be useful to me in the future
+
+```
+1.java code for Custom recycler Adapter from medium 
+2. del and rd commands in cmd /s/q /f 
+3. how to make a virtual environment for python
+4. how to see the mac address of a router connected to my pc 
+etc
+```
+
+
+
+I have been doing basics of django tutorials
+
+
+
+for the last 4-5 hours I have been working on a personal Android  project - goals app
+
+I also want to work on a journal writer 
