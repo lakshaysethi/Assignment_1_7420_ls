@@ -105,3 +105,9 @@ def explore(request):
     return render(request, 'explore.html', context)
 
 
+def editProfile(request):
+    if (not request.user.is_authenticated):
+        return redirect('start')
+    title = 'Edit Profile'
+    context = {'title': title}
+    return render(request, 'edit-profile.html', context)
