@@ -356,4 +356,19 @@ I will be using bootstrap for this
 
 ```
 
+@ 7:55 am 
 
+learnt something new 
+<div class="container">
+
+```
+<div class="row justify-content-center">
+
+    <div class="col-6">
+        <h1>wall</h1>
+    </div>
+
+
+
+</div>
+```
