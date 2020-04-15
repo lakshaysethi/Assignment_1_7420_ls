@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 from django.shortcuts import render
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
 from django.shortcuts import redirect
 from django.http import HttpResponse
 from django.contrib import messages
@@ -55,8 +55,18 @@ def loginUser(request):
     return render(request, 'login.html', context)
 
 
+def logoutUser(request):
+    if (request.user.is_authenticated):
+        logout(request)
+
+
+    return redirect( 'login'  )
+
+
 
 def home(request):
+    if(not request.user.is_authenticated):
+        return redirect('start')
     title = 'Wall'
     context = {'title': title}
     return render(request, 'wall.html', context)
@@ -64,24 +74,34 @@ def home(request):
 
 
 def forgot(request):
+    if ( request.user.is_authenticated):
+        return redirect('home')
     title = 'Forgot Password!'
     context = {'title': title}
     return render(request, 'forgot.html', context)
 
 
 def profile(request):
+    if (not request.user.is_authenticated):
+        return redirect('start')
     title = 'Profile'
     context = {'title': title}
     return render(request, 'profile.html', context)
 
 
 def addPost(request):
+    if (not request.user.is_authenticated):
+        return redirect('start')
     title = 'Add Post!'
     context = {'title': title}
     return render(request, 'addpost.html', context)
 
 
 def explore(request):
+    if (not request.user.is_authenticated):
+        return redirect('start')
     title = 'Explore!'
     context = {'title': title}
     return render(request, 'explore.html', context)
+
+
