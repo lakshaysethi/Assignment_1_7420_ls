@@ -338,6 +338,9 @@ estimate - 30 mins - 6:00 to 6:30pm
 
 2.1 look at instagrams first page
  they dont have a header - just a footer and a main in the first page page 
+ 
+2.2 write the firstpage.html
+I will be using bootstrap for this
 ```
 
 
