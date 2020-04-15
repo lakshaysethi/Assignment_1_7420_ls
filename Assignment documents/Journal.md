@@ -341,6 +341,10 @@ estimate - 30 mins - 6:00 to 6:30pm
  
 2.2 write the firstpage.html
 I will be using bootstrap for this
+
+2.3 test if the urls are rendering the templates or not 
+	they are not !! 😭😭😱😱 
+	I added the templates directory  in pycharms's settings  
 ```
 
 
