@@ -295,3 +295,20 @@ I have been doing basics of django tutorials
 for the last 4-5 hours I have been working on a personal Android  project - goals app
 
 I also want to work on a journal writer 
+
+I will write more now
+
+I have made some progress on the goals app its  good :) 
+
+I slept at 6 am  and  I woke up just now -  5:15 pm  sleep time 11hrs 15 mins bad 
+
+np im rested well.
+
+
+
+
+
+
+
+
+
