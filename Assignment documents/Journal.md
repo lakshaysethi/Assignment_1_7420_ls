@@ -291,26 +291,60 @@ I have been doing basics of django tutorials
 for the last 4-5 hours I have been working on a personal Android  project - goals app
 
 I also want to work on a journal writer 
+I have made some progress on the goals app its  good :) 
+I will sleep now
 
 ```
+
+I slept at 6 am  and  I woke up just now -  5:15 pm==  sleep time --11hrs 15 mins bad ,np im rested well.
+
+I will write more now
 
 now it is 5:15pm:
 
+```english
+Strarting work on django Assignment for 7420
+
+Tasks
+
+1. setup
+2. make/find good template for first page of instagram clone
+3.
+4.
+5.
+6.
 ```
-I will write more now
 
-I have made some progress on the goals app its  good :) 
+```
+Going to work on Task #1, 
 
-I slept at 6 am  and  I woke up just now -  5:15 pm  sleep time 11hrs 15 mins bad 
+Estimate: 15 minutes 5:40 to 5:55pm
 
-np im rested well.
+1.1 so the problem was that I had not uploaded the venv files to the remote and I deleted the project files - when when I cloned the project again pycharms could not find an interpreter - i solved this problem by googling - i need to add an interperter using the bottom right  button "add interpreter" then I had to go to terminal and activate venv and then pip install django 
+
+then I am getting tthis error
+
+1.2 OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+this was caused by crispy forms installed apps line in setting.py  - could not find this on the web but i rememberd encountering this problem before and  checked my setting.py again
+
+1.3 now there are some more errors - will fix those 
+
+now it is 5:55 so ill give it 5 mins more - its done at 5:57pm 
+```
+
+```
+Going to work on Task #2
+estimate - 30 mins - 6:00 to 6:30pm 
+
+2.1 look at instagrams first page
+ they dont have a header - just a footer and a main in the first page page 
 ```
 
 
 
 ```
 
-Example::
+Example for reference::
 
 Going to work on Task #5, to try and implement saving user data to text files.
 Estimate: 30 minutes
