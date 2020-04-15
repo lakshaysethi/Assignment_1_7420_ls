@@ -9,17 +9,17 @@
 
     <div class="container">
 
-
-        <div class="row justify-content-center">
-
-            <div class="col-6">
-                <h1>{{ title }}</h1>
+        <div class="row info shadow p-3 mb-1 bg-white rounded">
+            <div class="col-4"><img src="#" alt="profile pic" class="profile-pic"></div>
+            <div class="col-4 user-info">description
+                <a href="{% url 'edit-profile' %}" class="btn btn-outline-info">Edit Profile</a>
             </div>
-
-
-
         </div>
-
+        <div class="row posts shadow p-3 mb-5 bg-white rounded">
+#posts
+        </div>
+        <!--<div class="row justify-content-center">        </div>
+-->
 
     </div>
 
