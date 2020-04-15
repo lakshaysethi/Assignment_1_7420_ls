@@ -334,7 +334,9 @@ now it is 5:55 so ill give it 5 mins more - its done at 5:57pm
 
 ```
 Going to work on Task #2
-estimate - 30 mins - 6:00 to 6:30pm 
+estimate - 30 mins - 6:00 to 6:30pm x
+new estimate -> till 7pm 
+new estimate-> till 7:30pm
 
 2.1 look at instagrams first page
  they dont have a header - just a footer and a main in the first page page 
@@ -344,7 +346,14 @@ I will be using bootstrap for this
 
 2.3 test if the urls are rendering the templates or not 
 	they are not !! 😭😭😱😱 
-	I added the templates directory  in pycharms's settings  
+	I added the templates directory  in pycharms's settings - it worked but !! the rpoblem is that it didn't change any settings .py files when I did that - Ill get to this later - test is that does it work when there is no .pycache files 
+
+
+2.4 make firstpage.html better x
+	2.4.1 learn Bootstrap  x
+		2.4.1.1 learn how to make container be in the center center center x
+2.5 find a readymade template - X
+
 ```
 
 
