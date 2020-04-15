@@ -4,5 +4,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def index(request):
-    return HttpResponse("Hello, world. ")
+def start(request):
+    title = 'Welcome!'
+    context = {'title': title}
+    if(request.user.is_authenticated):
+        pass
+
+    return render(request, 'firstPage.html', context)
+
+
