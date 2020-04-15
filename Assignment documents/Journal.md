@@ -345,7 +345,7 @@ new estimate-> till 7:30pm
 I will be using bootstrap for this
 
 2.3 test if the urls are rendering the templates or not 
-	they are not !! 😭😭😱😱 
+	they are not !!
 	I added the templates directory  in pycharms's settings - it worked but !! the rpoblem is that it didn't change any settings .py files when I did that - Ill get to this later - test is that does it work when there is no .pycache files 
 
 
