@@ -127,6 +127,11 @@ def explore(request):
         return redirect('start')
     title = 'Explore!'
     context = {'title': title,'users':User.objects.all()}
+    if(request.method=='POST'):
+        userID = request.POST.get('userID')
+        if(userID is  not None):
+            u2= User.objects.get(pk= userID)
+            request.user.profile.friendlist
 
 
 
