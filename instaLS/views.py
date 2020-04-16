@@ -78,17 +78,17 @@ def home(request):
 
 
 
-def forgot(request):
-    if ( request.user.is_authenticated):
-        return redirect('home')
-    title = 'Forgot Password!'
-    context = {'title': title}
-    if(request.method =="POST"):
-        email = request.POST.get('email')
-        return redirect('reset_password')
-
-
-    return render(request, 'forgot.html', context)
+# def forgot(request):
+#     if ( request.user.is_authenticated):
+#         return redirect('home')
+#     title = 'Forgot Password!'
+#     context = {'title': title}
+#     if(request.method =="POST"):
+#         email = request.POST.get('email')
+#         return redirect('reset_password')
+#
+#
+#     return render(request, 'forgot.html', context)
 
 
 def profile(request):
@@ -126,7 +126,10 @@ def explore(request):
     if (not request.user.is_authenticated):
         return redirect('start')
     title = 'Explore!'
-    context = {'title': title}
+    context = {'title': title,'users':User.objects.all()}
+
+
+
     return render(request, 'explore.html', context)
 
 @login_required
