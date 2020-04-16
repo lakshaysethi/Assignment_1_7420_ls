@@ -1,9 +1,7 @@
 <div class="row user-info shadow p-3 mb-1 bg-white rounded">
-    <div class=" col-4"><img style="max-width: 150px" src="{{ user.profile.image.url }}" alt="profile pic" class="profile-pic"></div>
-    <div class="col-4 user-info">
-        <p class="text-secondary">{{ user.username }}</p>
-        <p class="text-secondary">{{ user.first_name }}</p>
-        <p class="text-secondary">{{ user.email }}</p>
+    <div class=" col-3"><img style="max-width: 150px" src="{{ user.profile.image.url }}" alt="profile pic" class="profile-pic"></div>
+    <div class="col-3 user-info">
+        <p class="text-secondary">{{ user.username }} <br> {{ user.first_name }} {{ user.last_name }} <br>{{ user.email }}</p>
         <a href="{% url 'edit-profile' %}" class="btn btn-outline-info">Edit Profile</a>
     </div>
 </div>

@@ -16,13 +16,18 @@
                         {% if u1 == user %}
 
                         {% else %}
+                            <form method='POST'>
+                                <div class="row  my-2">
 
-                    <div class="row  my-2">
-                        <div class="col"><img style="max-width: 50px;height: 50px!important;" src="{{ u1.profile.image.url }}" alt="profile pic" class="profile-pic"></div>
-                        <div class="col col-9 col-sx-6"><p class="text-secondary">{{ u1.username }} {# {{ u1.first_name }} #} </p></div>
-                        <div class="col"><a href="{# {% url 'follow/{{u1.username}}' %} #}" class="btn btn-outline-info">Follow</a></div>
+                                    <div class="col"><img style="max-width: 50px;height: 50px!important;"src="{{ u1.profile.image.url }}" alt="profile pic"
+                                                          class="profile-pic"></div>
+                                    <div class="col col-8 col-sx-6"><p name="userID" value="{{ u1.pk }}"class="text-secondary">{{ u1.username }}{# {{ u1.first_name }} #} </p></div>
 
-                    </div>
+                                    <div class="col"><a type="submit" class="btn btn-outline-info">Follow</a></div>
+
+
+                                </div>
+                            </form>
                         {% endif %}
                     {% endfor %}
 
