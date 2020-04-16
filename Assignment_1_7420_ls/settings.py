@@ -25,7 +25,7 @@ SECRET_KEY = '1i*ddp+2$-+ylh)s!g)b^l)*cgan8@yi-_^^5=1j)mp=k@rpjt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.14','127.0.0.1']
 
 
 # Application definition
@@ -130,3 +130,10 @@ MEDIA_URL = '/media/'
 CRISPY_TEMPLATE_PACK  = 'bootstrap4'
 
 
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'pythondjangolakshay@gmail.com'
+EMAIL_HOST_PASSWORD = 'testing321'
