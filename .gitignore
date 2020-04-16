@@ -391,3 +391,5 @@ fabric.properties
 *.pyc
 *.pyc
 .vscode/settings.json
+
+!*/media/profile_pics/default.png
