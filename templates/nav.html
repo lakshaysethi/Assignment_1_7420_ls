@@ -1,6 +1,12 @@
 {% load static %}
+<style>
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    .navbar{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,32,1) 67%, rgba(255,0,120,1) 100%);
+    }
+</style>
+<nav class="navbar navbar-expand-sm ">
 
     <a class="navbar-brand" href="{% url 'home' %}"><img style='width: 50px;' src="{% static 'assets/img/logo.png' %}"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
