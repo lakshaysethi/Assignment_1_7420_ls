@@ -7,22 +7,23 @@
     <main>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-8 h-100">
                     <div class="row">
                         <h1>{{ title }}</h1>
                     </div>
                     <hr>
-                    {% for user in users %}
-                    <div class="row">
-                        <div class="col-2"><img style="max-width: 50px" src="{{ user.profile.image.url }}" alt="profile pic" class="profile-pic"></div>
-                        <div class="col user-info">
-                            <p class="text-secondary">{{ user.username }}-{{ user.first_name }}</p>
+                    {% for u1 in users %}
+                        {% if u1 == user %}
 
+                        {% else %}
 
-                            <a href="{# {% url 'follow/{{user.username}}' %} #}" class="btn btn-outline-info">Follow</a>
-                        </div>
+                    <div class="row  my-2">
+                        <div class="col"><img style="max-width: 50px;height: 50px!important;" src="{{ u1.profile.image.url }}" alt="profile pic" class="profile-pic"></div>
+                        <div class="col col-9 col-sx-6"><p class="text-secondary">{{ u1.username }} {# {{ u1.first_name }} #} </p></div>
+                        <div class="col"><a href="{# {% url 'follow/{{u1.username}}' %} #}" class="btn btn-outline-info">Follow</a></div>
 
                     </div>
+                        {% endif %}
                     {% endfor %}
 
 
