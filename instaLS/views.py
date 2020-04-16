@@ -8,8 +8,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView
 from django import forms
-from .forms import  UserRegisterForm, UserUpdateForm, ProfileUpdateForm
-
+from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm, AddPostForm
 
 # Create your views here.
 from .models import Post
@@ -96,11 +95,6 @@ def profile(request):
 
     return render(request, 'profile.html', context)
 
-class AddPostForm(forms.ModelForm):
-    class Meta:
-        model = Post
-        fields = ['title', 'body', 'image']
-
 
 @login_required
 def addPost(request):
@@ -114,7 +108,6 @@ def addPost(request):
 
             post = form.save(commit=False)
             post.by = request.user.profile
-
             post.save()
             return redirect('home')
     else:
