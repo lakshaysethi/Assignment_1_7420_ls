@@ -11,37 +11,7 @@
             <div class="row justify-content-center">
                 <div class="col-6">
                     <div class="content-section">
-                        <form method="POST">
-                            {% csrf_token %}
-                            <fieldset class="form-group">
-                                <legend class="border-bottom mb-4">Image Post</legend>
-                                <div id="div_id_title" class="form-group"><label for="id_title" class=" requiredField">
-                                    Title<span class="asteriskField">*</span> </label>
-                                    <div class=""><input type="text" name="title" maxlength="250"
-                                                         class="textinput textInput form-control" required
-                                                         id="id_title"></div>
-                                </div>
-                                <div id="div_id_image" class="form-group"><label for="id_image" class="">
-                                    Image
-                                </label>
-                                    <div class=""><input type="file" name="image" accept="image/*"
-                                                         class="clearablefileinput form-control-file" id="id_image">
-                                    </div>
-                                </div>
-                                <div id="div_id_body" class="form-group"><label for="id_body">
-                                    Body </label>
-                                    <div class=""><input type="text" name="body" maxlength="500"
-                                                         class="textinput textInput form-control" required id="id_body">
-                                    </div>
-                                </div>
-
-
-                            </fieldset>
-                            <div class="form-group">
-                                <button class="btn btn-outline-info" type="submit">create</button>
-                            </div>
-                        </form>
-
+                       {{ form }}
                     </div>
                 </div>
 

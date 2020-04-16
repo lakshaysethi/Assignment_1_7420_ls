@@ -2,11 +2,12 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 from django.contrib.auth import authenticate,login,logout
+
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView
-
+from django import forms
 from .forms import  UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 
 
@@ -95,24 +96,27 @@ def profile(request):
 
     return render(request, 'profile.html', context)
 
+class addPostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ['title', 'body', 'image']
 
+
+@login_required
 def addPost(request):
     if (not request.user.is_authenticated):
         return redirect('start')
     title = 'Add Post!'
     context = {'title': title}
+    if request.method == 'POST':
+        form = addPostForm(request.POST, request.FILES)
 
+        if form.is_valid():
 
-    if (request.method == 'POST'):
-        title = request.POST.get('title')
-        body = request.POST.get('body')
-        by = request.user.profile
-        image = request.POST.get('image')
-
-        Post.objects.create(title = title,body= body,by = by,image=image)
-
-        return redirect('home')
-
+            post = form.save(commit= False)
+            post.by = request.user.profile
+            post.save()
+            return redirect('home')
 
     return render(request, 'addpost.html', context)
 
