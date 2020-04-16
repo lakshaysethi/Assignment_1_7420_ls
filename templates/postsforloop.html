@@ -4,9 +4,9 @@
 
  <div class="row info shadow p-3 mb-1 bg-white rounded">
 <div class="">
-
+{% if post.image %}
             <img style="width: 400px" src="{{ post.image.url }}">
-
+{% endif %}
      <br>
                     <h6>title:{{ post.title }}</h6>
                     <h6>by:{{ post.by.user.username }}</h6>

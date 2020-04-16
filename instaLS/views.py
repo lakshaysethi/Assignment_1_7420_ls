@@ -96,7 +96,7 @@ def profile(request):
 
     return render(request, 'profile.html', context)
 
-class addPostForm(forms.ModelForm):
+class AddPostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'body', 'image']
@@ -107,16 +107,19 @@ def addPost(request):
     if (not request.user.is_authenticated):
         return redirect('start')
     title = 'Add Post!'
-    context = {'title': title}
     if request.method == 'POST':
-        form = addPostForm(request.POST, request.FILES)
+        form = AddPostForm(request.POST, request.FILES)
 
         if form.is_valid():
 
-            post = form.save(commit= False)
+            post = form.save(commit=False)
             post.by = request.user.profile
+
             post.save()
             return redirect('home')
+    else:
+        form = AddPostForm()
+    context = {'title': title, "form": form}
 
     return render(request, 'addpost.html', context)
 
