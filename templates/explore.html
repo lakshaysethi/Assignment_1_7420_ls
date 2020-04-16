@@ -1,29 +1,40 @@
-
 {% extends 'base.html' %}
 
 {% load static %}
 
 {% block content1 %}
     {% include 'nav.html' %}
-<main>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="row">
+                        <h1>{{ title }}</h1>
+                    </div>
+                    <hr>
+                    {% for user in users %}
+                    <div class="row">
+                        <div class="col-2"><img style="max-width: 50px" src="{{ user.profile.image.url }}" alt="profile pic" class="profile-pic"></div>
+                        <div class="col user-info">
+                            <p class="text-secondary">{{ user.username }}-{{ user.first_name }}</p>
 
-    <div class="container">
+
+                            <a href="{# {% url 'follow/{{user.username}}' %} #}" class="btn btn-outline-info">Follow</a>
+                        </div>
+
+                    </div>
+                    {% endfor %}
 
 
-        <div class="row justify-content-center">
+                </div>
 
-            <div class="col-6">
-                <h1>{{ title }}</h1>
+
             </div>
-
 
 
         </div>
 
-
-    </div>
-
-</main>
+    </main>
 
 
 
