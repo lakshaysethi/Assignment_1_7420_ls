@@ -1,12 +1,17 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
 from django.db import IntegrityError
-from django.shortcuts import render
 from django.contrib.auth import authenticate,login,logout
-from django.shortcuts import redirect
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.views.generic import CreateView
+
+from .forms import  UserRegisterForm, UserUpdateForm, ProfileUpdateForm
+
 
 # Create your views here.
+from .models import Post
 
 
 def start(request):
@@ -68,7 +73,7 @@ def home(request):
     if(not request.user.is_authenticated):
         return redirect('start')
     title = 'Wall'
-    context = {'title': title}
+    context = {'title': title,'posts':Post.objects.all()}
     return render(request, 'wall.html', context)
 
 
@@ -85,7 +90,9 @@ def profile(request):
     if (not request.user.is_authenticated):
         return redirect('start')
     title = 'Profile'
-    context = {'title': title}
+    context = {'title': title,'posts':request.user.profile.post_set.all()}
+
+
     return render(request, 'profile.html', context)
 
 
@@ -94,6 +101,19 @@ def addPost(request):
         return redirect('start')
     title = 'Add Post!'
     context = {'title': title}
+
+
+    if (request.method == 'POST'):
+        title = request.POST.get('title')
+        body = request.POST.get('body')
+        by = request.user.profile
+        image = request.POST.get('image')
+
+        Post.objects.create(title = title,body= body,by = by,image=image)
+
+        return redirect('home')
+
+
     return render(request, 'addpost.html', context)
 
 
@@ -104,10 +124,34 @@ def explore(request):
     context = {'title': title}
     return render(request, 'explore.html', context)
 
-
+@login_required
 def editProfile(request):
     if (not request.user.is_authenticated):
         return redirect('start')
     title = 'Edit Profile'
     context = {'title': title}
+
+    if request.method == 'POST':
+        u_form = UserUpdateForm(request.POST, instance=request.user)
+        p_form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
+        if u_form.is_valid() and p_form.is_valid():
+            u_form.save()
+            p_form.save()
+            messages.success(request, f'Your account has been Updated Successfully!')
+            return redirect('profile')
+    else:
+        u_form = UserUpdateForm(instance=request.user)
+        p_form = ProfileUpdateForm(instance=request.user.profile)
+
+    context['u_form']= u_form
+    context['p_form']= p_form
+
+
     return render(request, 'edit-profile.html', context)
+
+
+
+
+
+
+

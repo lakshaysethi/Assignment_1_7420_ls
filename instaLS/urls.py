@@ -2,6 +2,7 @@ from django.urls import path
 
 from . import views
 
+
 urlpatterns = [
     path('', views.start, name='start'),
     path('login/', views.loginUser, name='login'),
@@ -12,6 +13,6 @@ path('addpost/', views.addPost, name='addPost'),
 path('explore/', views.explore, name='explore'),
 path('home/', views.home, name='home'),
 path('logout/', views.logoutUser, name='logout'),
-
+#path('addpost/', FaceCreateView.as_view(), name='addPost'),
 
 ]
