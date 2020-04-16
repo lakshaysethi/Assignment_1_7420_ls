@@ -150,7 +150,17 @@ def editProfile(request):
     return render(request, 'edit-profile.html', context)
 
 
+def search(request):
+    posts = []
+    keyword = request.POST.get('searchText')
+    for p1 in Post.objects.all():
+        if str(p1.title).find(keyword) > -1 or str(p1.body).find(keyword) > -1 :
+            posts.append(p1)
 
+
+
+    context = {'posts':posts,'search':keyword}
+    return render(request, 'search.html', context)
 
 
 

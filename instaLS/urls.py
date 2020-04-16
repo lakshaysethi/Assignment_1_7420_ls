@@ -13,6 +13,7 @@ path('addpost/', views.addPost, name='addPost'),
 path('explore/', views.explore, name='explore'),
 path('home/', views.home, name='home'),
 path('logout/', views.logoutUser, name='logout'),
+path('search/', views.search, name='search'),
 #path('addpost/', FaceCreateView.as_view(), name='addPost'),
 
 ]

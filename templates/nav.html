@@ -45,10 +45,13 @@
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>-->
         </ul>
-        <form method="post" class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2"  type="search" placeholder="Search" aria-label="Search">
+        <form method='POST'  action='{% url "search" %}' class="form-inline my-2 my-lg-0">
+           {% csrf_token %}
+            <input  name = 'searchText' type="text" placeholder="Search" aria-label="Search">
             <button style="display: none" type="submit">Search</button>
         </form>
+
+
     </div>
 
 

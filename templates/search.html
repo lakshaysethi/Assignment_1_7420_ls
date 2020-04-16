@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content1 %}
+    {% include 'nav.html' %}
+<main>
+
+    <div class="container">
+  <h1> Search Results for:  {{ search }} </h1>
+
+
+
+{% include 'postsforloop.html' %}
+
+
+
+
+
+    </div>
+
+</main>
+
+
+
+{% endblock %}
