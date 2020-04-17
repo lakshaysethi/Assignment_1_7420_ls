@@ -95,7 +95,8 @@ def profile(request):
     if (not request.user.is_authenticated):
         return redirect('start')
     title = 'Profile'
-    context = {'title': title,'posts':request.user.profile.post_set.all()}
+    following = request.user.profile.following.all()
+    context = {'title': title,'posts':request.user.profile.post_set.all(),'following':following}
 
 
     return render(request, 'profile.html', context)

@@ -6,10 +6,19 @@
     {% include 'nav.html' %}
     <main>
         <div class="container">
+            {#  top row  #}
             {% include 'user-info.html' %}
-            <div class="row posts shadow p-3 mb-5 bg-white rounded">
-                {% include 'postsforloop.html' %}
+            {# next row #}
+            <div class="row">
+                {#  needs posts as a parameter in context #}
+                <div class="col-8">{% include 'postsforloop.html' %}</div>
+                {#  needs followers as a parameter in context #}
+                <div class="col-4">
+                    <div class="row">{% include 'MyFollowers.html' %}</div>
+                    <div class="row">{% include 'IamFollowing.html' %}</div>
+                </div>
             </div>
+
         </div>
 
 

@@ -1,7 +1,22 @@
+
+
+
+{#   here is a row of  user info   #}
 <div class="row user-info shadow p-3 mb-1 bg-white rounded">
-    <div class=" col-3"><img style="max-width: 150px" src="{{ user.profile.image.url }}" alt="profile pic" class="profile-pic"></div>
-    <div class="col-3 user-info">
-        <p class="text-secondary">{{ user.username }} <br> {{ user.first_name }} {{ user.last_name }} <br>{{ user.email }}</p>
+{# it has 3 column  elements#}
+
+    <div class="col col-3"><img style="max-width: 150px" src="{{ user.profile.image.url }}" alt="profile pic" class="profile-pic"></div>
+
+    <div class="col col-3 user-info">
+        <p class="text-secondary">{{ user.username }} <br> {{ user.first_name }} {{ user.last_name }}
+            <br>{{ user.email }}</p>
         <a href="{% url 'edit-profile' %}" class="btn btn-outline-info">Edit Profile</a>
     </div>
+
+
+    <div class=" col col-3 user-info user-info-2">
+        <a href="{% url 'profile' %}" class="btn my-1 btn-outline-info">{{ '2' }} Following</a>
+        <a href="{% url 'profile' %}" class="btn my-1 btn-outline-info">{{ '1.3M' }} Followers</a>
+    </div>
+
 </div>

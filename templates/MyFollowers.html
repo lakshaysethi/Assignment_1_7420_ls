@@ -1,0 +1,16 @@
+<div class="container shadow p-3 mb-1 bg-white rounded">
+    {% if followers.first %}
+
+        <h5>Your Followers</h5>
+
+
+
+        {% for f1 in followers %}
+            {% include 'oneUserProfile.html' %}
+        {% endfor %}
+    {% else %}
+        <h5>You have no followers</h5>
+    {% endif %}
+
+</div>
+

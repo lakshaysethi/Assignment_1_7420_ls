@@ -1,0 +1,14 @@
+<div class="container shadow p-3 mb-1 bg-white rounded">
+    {% if following.first %}
+
+        <h5>Users You are Following</h5>
+
+
+        {% for f1 in following %}
+            {% include 'oneUserProfile.html' %}
+        {% endfor %}
+    {% else %}
+        <h5>You are not following any users</h5>
+    {% endif %}
+</div>
+
