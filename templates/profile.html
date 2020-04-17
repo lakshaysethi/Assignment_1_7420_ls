@@ -1,26 +1,19 @@
-
 {% extends 'base.html' %}
 
 {% load static %}
 
 {% block content1 %}
     {% include 'nav.html' %}
-<main>
-
-    <div class="container">
-{% include 'user-info.html' %}
-
-        <div class="row posts shadow p-3 mb-5 bg-white rounded">
-            {% include 'postsforloop.html' %}
+    <main>
+        <div class="container">
+            {% include 'user-info.html' %}
+            <div class="row posts shadow p-3 mb-5 bg-white rounded">
+                {% include 'postsforloop.html' %}
+            </div>
         </div>
-        <!--<div class="row justify-content-center">        </div>
--->
-
-    </div>
 
 
-
-</main>
+    </main>
 
 
 
