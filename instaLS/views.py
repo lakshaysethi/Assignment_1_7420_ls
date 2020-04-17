@@ -11,7 +11,7 @@ from django import forms
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm, AddPostForm
 
 # Create your views here.
-from .models import Post
+from .models import Post, Profile
 
 
 def start(request):
@@ -128,10 +128,12 @@ def explore(request):
     title = 'Explore!'
     context = {'title': title,'users':User.objects.all()}
     if(request.method=='POST'):
-        userID = request.POST.get('userID')
-        if(userID is  not None):
-            u2= User.objects.get(pk= userID)
-            request.user.profile.friendlist
+        profileId = request.POST.get('profileId')
+        if(profileId is  not None):
+            p1= Profile.objects.get(pk= profileId)
+            request.user.profile.following.add(p1)
+            messages.success(request, f'{p1.user.username} was added to your following list')
+
 
 
 
