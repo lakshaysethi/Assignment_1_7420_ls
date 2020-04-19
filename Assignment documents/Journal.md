@@ -372,3 +372,37 @@ learnt something new
 
 </div>
 ```
+
+
+
+
+```
+
+user authentication
+user profile with picture
+static files for logo and css
+ reset password by link on email
+good enough css i guess - on all templates
+adding a new post 
+seeing list of all other users to add them as a friend /follow them 
+search posts with text 
+
+# I have to implement the following features :
+improving css
+email verification
+using postgress 
+deploying on heroku/hosting
+using upload care for images problem with heroku
+add/delete friend/ follower
+chatting
+notifications when someone you follow posts something etc
+commenting 
+liking and saving liked posts list
+```
+
+Now I am working on :
+-chatting
+-feed
+-notifictons
+-ads
+-
