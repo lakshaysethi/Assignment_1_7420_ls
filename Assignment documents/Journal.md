@@ -406,3 +406,7 @@ Now I am working on :
 -notifictons
 -ads
 -
+
+
+need the following code for visual studio activate:
+`Set-ExecutionPolicy RemoteSigned`
