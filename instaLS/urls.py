@@ -15,7 +15,7 @@ path('home/', views.home, name='home'),
 path('logout/', views.logoutUser, name='logout'),
 path('search/', views.search, name='search'),
 #path('addpost/', FaceCreateView.as_view(), name='addPost'),
-
+path('like/', views.like, name='like'),
 
 
 path('forgot/',
