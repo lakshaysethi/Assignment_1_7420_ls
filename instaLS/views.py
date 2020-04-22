@@ -11,7 +11,7 @@ from django import forms
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm, AddPostForm
 
 # Create your views here.
-from .models import Post, Profile
+from .models import Post, Profile, Like
 
 
 def start(request):
@@ -73,7 +73,17 @@ def home(request):
     if(not request.user.is_authenticated):
         return redirect('start')
     title = 'Wall'
-    context = {'title': title,'posts':Post.objects.all()}
+    
+    postsData = []
+    for post in Post.objects.all():
+        if post.likes.filter(user=request.user).first() is not None:
+            unit = {'post':post,"likeByCurrentUser":post.likes.filter(user=request.user).first()}
+        else:
+            unit = {'post':post}
+        postsData.append(unit)
+
+
+    context = {'title': title,'postsData':postsData}
     return render(request, 'wall.html', context)
 
 
@@ -101,6 +111,18 @@ def profile(request):
 
     return render(request, 'profile.html', context)
 
+
+def like(request):
+    if request.method == 'POST':
+        #print("the post you liked is :"+ request.POST.get('postId'))
+        #print("the emoji you clicked was :"+request.POST.get('emoji'))
+        post = Post.objects.get(id=request.POST.get('postId'))
+        if post.likes.all().filter(user=request.user).first() is not None:
+            post.likes.all().filter(user=request.user).delete()
+        like = Like.objects.create(user=request.user, emoji=int(request.POST.get('emoji')))
+        post.likes.add(like)
+
+    return render(request, 'wall.html',{})
 
 @login_required
 def addPost(request):
