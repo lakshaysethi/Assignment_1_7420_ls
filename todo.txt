@@ -1,0 +1,41 @@
+done
+
+
+TODO
+
+like photo, and liked posts list
+
+
+# add ability to upload multiple photos as seperate posts
+
+# ability to add multiple photos to singe post
+
+profile links of other user
+
+private accounts
+
+improve explore with pagination/infinate scrolling
+
+improving css
+
+
+comments
+
+delete and update post
+
+images hosting uploadcare 
+
+app hosting on heroku
+
+chat
+
+notifications
+
+search user
+
+footer
+
+postgreSQL
+
+remove friend/ follower/following
+
