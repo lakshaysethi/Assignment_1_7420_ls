@@ -1,19 +1,61 @@
 {# here is a row of all the posts #}
 
 
-{% for post in posts %}
+
+<style>
+    .option {
+        display: inline;
+        font-size: 1.5rem;
+    }
+    .emoji-1:after {
+        content:'❤ed';
+
+    }
+    .emoji-2:after {
+        content:'😍ed';
+
+    }
+    .emoji-3:after {
+        content:'👍ed';
+
+    }
+    .emoji-4:after {
+        content:'🤢ed';
+
+    }
+    .no-emoji:after {
+        content:'❤';
+
+    }
+</style>
+
+{% for unit in postsData %}
 
 <div class="row allimageposts shadow p-3 mb-1 bg-white rounded">
     <div class="col post shadow p-3 mb-1 bg-white rounded">
 
-            {% if post.image %}
-                <img style="width: 400px" src="{{ post.image.url }}">
-            {% endif %}
-            <br>
-            <h6>title:{{ post.title }}</h6>
-            <h6>by:{{ post.by.user.username }}</h6>
-            <h6>body: {{ post.body }}</h6>
-            <small class="text-muted">{{ post.date_posted|date:"F d, y " }}</small>
-        </div>
+        {% if unit.post.image %}
+        <img style="width: 400px" src="{{ unit.post.image.url }}">
+        {% endif %}
+        <br>
+        <h6>title:{{ unit.post.title }}</h6>
+        <h6>by:{{ unit.post.by.user.username }}</h6>
+        <h6>body: {{ unit.post.body }}</h6>
+        <small class="text-muted">{{ unit.post.date_posted|date:"F d, y " }}</small><br>
+        <button class='btn btn-primary'>
+            <div class="cuttentOption {% if unit.likeByCurrentUser %}emoji-{{ unit.likeByCurrentUser.emoji }}{% else %} no-emoji{% endif %}"></div>
+            <span class="toolTipOptions">
+                {% include 'likeOptions.html' %}
+            </span>
+        </button>
+    </div>
 </div>
 {% endfor %}
+<script>
+
+    $('.option').click(function () {
+        emojiid = $(this).find('.emojiid').val()
+        $(this).parent().parent().parent().find('.cuttentOption').removeClass('no-emoji').removeClass('emoji-1').removeClass('emoji-2').removeClass('emoji-3').removeClass('emoji-4').addClass(`emoji-${emojiid}`)
+        $.post('{% url "like" %}', { 'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value, 'postId': $(this).find('.postid').val(), 'emoji': emojiid })
+    })
+</script>
