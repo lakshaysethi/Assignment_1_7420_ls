@@ -3,8 +3,19 @@ done
 
 TODO
 
+update post
+
 like photo, and liked posts list
 
+emoticon insted of just like - choose emoticon
+
+chat
+
+notifications
+
+comments
+
+private accounts
 
 # add ability to upload multiple photos as seperate posts
 
@@ -12,14 +23,9 @@ like photo, and liked posts list
 
 profile links of other user
 
-private accounts
-
 improve explore with pagination/infinate scrolling
 
 improving css
-
-
-comments
 
 delete and update post
 
@@ -27,9 +33,6 @@ images hosting uploadcare
 
 app hosting on heroku
 
-chat
-
-notifications
 
 search user
 
