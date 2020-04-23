@@ -1,0 +1,20 @@
+
+<div class="row allimageposts shadow p-3 mb-1 bg-white rounded">
+    <div class="col post shadow p-3 mb-1 bg-white rounded">
+
+        {% if unit.post.image %}
+        <img style="width: 400px" src="{{ unit.post.image.url }}">
+        {% endif %}
+        <br>
+        <h6>title:{{ unit.post.title }}</h6>
+        <h6>by:{{ unit.post.by.user.username }}</h6>
+        <h6>body: {{ unit.post.body }}</h6>
+        <small class="text-muted">{{ unit.post.date_posted|date:"F d, y " }}</small><br>
+        <button class='btn btn-primary'>
+            <div class="cuttentOption {% if unit.likeByCurrentUser %}emoji-{{ unit.likeByCurrentUser.emoji }}{% else %} emoji-{% endif %}"></div>
+            <span class="toolTipOptions">
+                {% include 'likeOptions.html' %}
+            </span>
+        </button>
+    </div>
+</div>

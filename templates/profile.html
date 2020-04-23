@@ -11,7 +11,16 @@
             {# next row #}
             <div class="row">
                 {#  needs posts as a parameter in context #}
-                <div class="col-8">{% include 'postsforloop.html' %}</div>
+                <div class="col-8">
+                    
+                    <h1>MY posts</h1>
+                    {% include 'mypostsforloop.html' %}
+
+                    <h1>Posts I like</h1>
+
+                    {% include 'postsforloop.html' %}
+                
+                </div>
                 {#  needs followers as a parameter in context #}
                 <div class="col-4">
                     <div class="row">{% include 'MyFollowers.html' %}</div>

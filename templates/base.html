@@ -12,6 +12,68 @@
     <title>{{ title }}-Instagram Clone!</title>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 
+
+
+
+    <style>
+        .btn {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+           
+          }
+          
+          .btn .toolTipOptions {
+            visibility: hidden;
+            min-width: 180px;
+            
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+          
+            /* Position the tooltip */
+            position: absolute;
+            top: 0px;
+            left: -20px;
+            z-index: 1;
+          }
+          
+          .btn:hover .toolTipOptions {
+            visibility: visible;
+          }
+        </style>
+
+
+<style>
+    .option {
+        display: inline;
+        font-size: 1.5rem;
+    }
+    .emoji-1:after {
+        content:'❤ed';
+
+    }
+    .emoji-2:after {
+        content:'😍ed';
+
+    }
+    .emoji-3:after {
+        content:'👍ed';
+
+    }
+    .emoji-4:after {
+        content:'🤢ed';
+
+    }
+    .emoji-:after {
+        content:'❤';
+
+    }
+</style>
+
+
 </head>
 
 <body>
@@ -34,5 +96,30 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+        
+<script>
+
+    $('.option').click(function () {
+        emojiid = $(this).find('.emojiid').val()
+
+        $.post('{% url "like" %}', { 'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value, 'postId': $(this).find('.postid').val(), 'emoji': emojiid })
+        
+        var index = $(this).parent().parent().parent().find('.cuttentOption').attr('class').indexOf(`${emojiid}`)
+        
+        if(index>-1){
+            $(this).parent().parent().parent().find('.cuttentOption').removeClass('emoji-').removeClass('emoji-1').removeClass('emoji-2').removeClass('emoji-3').removeClass('emoji-4')
+            $(this).parent().parent().parent().find('.cuttentOption').addClass(`emoji-`)
+            location.reload(true)
+        }else{
+            $(this).parent().parent().parent().find('.cuttentOption').removeClass('emoji-').removeClass('emoji-1').removeClass('emoji-2').removeClass('emoji-3').removeClass('emoji-4')
+        
+            $(this).parent().parent().parent().find('.cuttentOption').addClass(`emoji-${emojiid}`)
+            location.reload(true)
+        }
+        
+       
+    })
+</script>
 </body>
 </html>

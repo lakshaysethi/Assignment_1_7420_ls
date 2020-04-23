@@ -106,7 +106,19 @@ def profile(request):
         return redirect('start')
     title = 'Profile'
     following = request.user.profile.following.all()
-    context = {'title': title,'posts':request.user.profile.post_set.all(),'following':following}
+    postsData = []
+    likes = request.user.like_set.all()
+    for like in likes:
+        unit = {'post':like.post_set.first(),'likeByCurrentUser':like}
+        postsData.append(unit)
+
+    myPosts = []
+    allmyPosts = request.user.profile.post_set.all()
+    for post in allmyPosts:
+        unit = {'post':post,'likeByCurrentUser':post.likes.filter(user=request.user).first()}
+        myPosts.append(unit)
+
+    context = {'title': title,'myPosts':myPosts,'following':following,'postsData':postsData}
 
 
     return render(request, 'profile.html', context)
@@ -118,11 +130,15 @@ def like(request):
         #print("the emoji you clicked was :"+request.POST.get('emoji'))
         post = Post.objects.get(id=request.POST.get('postId'))
         if post.likes.all().filter(user=request.user).first() is not None:
+            if str(post.likes.all().filter(user=request.user).first().emoji) == request.POST.get('emoji'):
+                post.likes.all().filter(user=request.user).delete()
+                return redirect('home')
+            #delete old like
             post.likes.all().filter(user=request.user).delete()
         like = Like.objects.create(user=request.user, emoji=int(request.POST.get('emoji')))
         post.likes.add(like)
 
-    return render(request, 'wall.html',{})
+    return redirect('home')
 
 @login_required
 def addPost(request):

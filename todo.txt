@@ -1,27 +1,35 @@
 done
 
+1. like photo, and liked posts list
+2. emoticon insted of just like - choose emoticon
 
 TODO
 
-update post
+unlike
 
-like photo, and liked posts list
+unfollow
 
-emoticon insted of just like - choose emoticon
+
+
+profile links of other user
 
 chat
 
 notifications
 
+
 comments
 
+update post
+
 private accounts
+
+
+remove friend/ follower/following
 
 # add ability to upload multiple photos as seperate posts
 
 # ability to add multiple photos to singe post
-
-profile links of other user
 
 improve explore with pagination/infinate scrolling
 
@@ -39,6 +47,4 @@ search user
 footer
 
 postgreSQL
-
-remove friend/ follower/following
 
