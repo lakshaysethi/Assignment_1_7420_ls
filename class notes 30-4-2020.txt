@@ -1,0 +1,14 @@
+class notes 
+
+pythonmanage.py datadump
+
+checked up with everyone - how they are doing with their assignments
+
+
+assignmnet 2 will be due on june 26th
+
+models x10 
+
+relationships x 3
+
+10 templates
