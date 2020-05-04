@@ -12,7 +12,9 @@ from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm, AddPostF
 
 # Create your views here.
 from .models import Post, Profile, Like
+from . import email_test
 
+import time as timer_wait
 
 def start(request):
     title = 'Welcome!'
@@ -125,6 +127,8 @@ def profile(request):
 
 
 def like(request):
+    
+    
     if request.method == 'POST':
         #print("the post you liked is :"+ request.POST.get('postId'))
         #print("the emoji you clicked was :"+request.POST.get('emoji'))
@@ -137,7 +141,7 @@ def like(request):
             post.likes.all().filter(user=request.user).delete()
         like = Like.objects.create(user=request.user, emoji=int(request.POST.get('emoji')))
         post.likes.add(like)
-
+    
     return redirect('home')
 
 @login_required
