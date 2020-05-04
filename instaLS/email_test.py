@@ -34,7 +34,6 @@ def test_email():
 
         smtp.send_message(msg)
 
-
 def print_email():
     print('email sent')
 def like_email():
@@ -50,6 +49,37 @@ def like_email():
     msg.add_alternative(html,subtype ='html')
 
     files = ["instaLS\default.png"]
+    for file in files:
+        with open(file ,'rb') as f:
+            file_data = f.read()
+            file_name = f.name
+
+        msg.add_attachment(file_data,maintype='application',subtype='octet-stream',filename=file_name)
+
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+        
+        smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+
+        smtp.send_message(msg)
+
+
+
+def send_email(email,username,message,subject):   
+    contacts = [email]
+    msg = EmailMessage()
+    msg['From'] = EMAIL_ADDRESS
+    msg['To'] = contacts
+    msg['Subject'] = subject
+    msg.set_content(message)
+
+    html = f"""<h1>Welcome</h1>
+    <p>Dear,{username}!</p>
+    <p>{message}</p>
+    
+    <a href='http://127.0.0.1:8000/login/'>Login here</a>"""
+    msg.add_alternative(html,subtype ='html')
+
+    files = []
     for file in files:
         with open(file ,'rb') as f:
             file_data = f.read()
