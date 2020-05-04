@@ -416,6 +416,10 @@ Traceback (most recent call last):
     return self._sock.recv_into(b)
 ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
 ```
+tried to find the cause of the problem and seems like the `handle_one_request` rule is causing the error
+googling the error also said this could be the problem 
+however in other views like register(start) view this problem does not occur
+created a github issue about this and added @krisp to it to get help
 
 ## notes
 
