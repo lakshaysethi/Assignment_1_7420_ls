@@ -371,9 +371,12 @@ need the following code for visual studio activate:
 
 
 # Start date and time: 04 may 2020
+```
 ## project:InstaLS(django assignmnet)
 ## tasks planned 
 ### make sure like system is working properly
+	1. when we clcik the like button jquery should change the icon without errors
+		
 ### chat
 ### comments
 ### notification
@@ -391,3 +394,4 @@ need the following code for visual studio activate:
 ## problems and solutions
 
 ## notes
+```
