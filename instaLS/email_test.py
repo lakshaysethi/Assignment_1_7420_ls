@@ -8,10 +8,8 @@ EMAIL_PASSWORD = 'testing321'
 # os.environ.get('EMAIL_PASS')
 
 
-with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-    smtp.ehlo()
-    smtp.starttls()
-    smtp.ehlo()
+with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+    
     smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
     subject = 'test email from python'
