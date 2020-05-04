@@ -126,9 +126,9 @@ def profile(request):
     return render(request, 'profile.html', context)
 
 
-def like(request):
-    
-    
+def like(request):   
+    email_test.print_email()
+    #email_test.like_email() 
     if request.method == 'POST':
         #print("the post you liked is :"+ request.POST.get('postId'))
         #print("the emoji you clicked was :"+request.POST.get('emoji'))
