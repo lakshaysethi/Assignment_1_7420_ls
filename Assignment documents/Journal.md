@@ -371,23 +371,48 @@ need the following code for visual studio activate:
 
 
 # Start date and time: 04 may 2020
+
 ## project:InstaLS(django assignmnet)
 ## tasks planned 
+### make css better
 ### make sure like system is working properly
+	DONE when we clcik the like button jquery should change the icon without errors
+		
 ### chat
 ### comments
 ### notification
-	unusual activity - someone login to your account 
-		someone login from different country- detect from IP what is location and send notification if it is a different country than the sign up country
-	when password is changed
-	when user sign up welcome email notifictiaon
-	when someone like our post 
-	when someone comment on our post
-	when someone follow us 
+DONE learn how to send email notification 
+	check test_email.py
+learn to make environment variable 
+unusual activity - someone login to your account 
+	someone login from different country- detect from IP what is location and send notification if it is a different country than the sign up country
+when password is changed
+when user sign up welcome email notifictiaon
+when someone like our post 
+when someone comment on our post
+when someone follow us 
 	
 
 ## tasks completed
 
 ## problems and solutions
+```
+Exception happened during processing of request from ('127.0.0.1', 55925)
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files (x86)\Python38-32\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Program Files (x86)\Python38-32\lib\socketserver.py", line 720, in __init__
+    self.handle()
+  File "C:\Users\laksh\Desktop\Assignment_1_7420_ls\venv\lib\site-packages\django\core\servers\basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "C:\Users\laksh\Desktop\Assignment_1_7420_ls\venv\lib\site-packages\django\core\servers\basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "C:\Program Files (x86)\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+```
 
 ## notes
+
