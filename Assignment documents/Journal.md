@@ -374,13 +374,13 @@ need the following code for visual studio activate:
 
 ## project:InstaLS(django assignmnet)
 ## tasks planned 
-### make css better
-### make sure like system is working properly
-	DONE when we clcik the like button jquery should change the icon without errors
-		
-### chat
-### comments
-### notification
+>1. make css better
+>2. make sure like system is working properly  
+>DONE when we clcik the like button jquery should change the icon without errors
+>		
+>3. chat
+>4. comments
+>5. notification
 ```
 DONE learn how to send email notification 
 	DONE check test_email.py
@@ -432,3 +432,18 @@ created a github issue about this and added @krisp to it to get help
 how to set environment variables:
 https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5
 https://www.youtube.com/watch?v=R0hpSIPqZek
+==================================================================================================
+
+# Start date and time: 05 may 2020 2:00 PM - 4:30PM
+
+### project:InstaLS(django assignmnet)
+### tasks planned 
+1.
+2.
+### tasks completed
+
+### problems and solutions
+
+### notes
+
+### resources used
