@@ -431,7 +431,8 @@ created a github issue about this and added @krisp to it to get help
 ## resources used
 
 *how to set environment variables:
->https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5  https://www.youtube.com/watch?v=R0hpSIPqZek  
+>* https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5  
+>* https://www.youtube.com/watch?v=R0hpSIPqZek  
 
 
 # Start date and time: 05 may 2020 2:00 PM - 4:30PM
