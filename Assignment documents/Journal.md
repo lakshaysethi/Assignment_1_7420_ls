@@ -423,5 +423,12 @@ googling the error also said this could be the problem
 however in other views like register(start) view this problem does not occur
 created a github issue about this and added @krisp to it to get help
 
+
+
+
 ## notes
 
+## resources used
+how to set environment variables:
+https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5
+https://www.youtube.com/watch?v=R0hpSIPqZek
