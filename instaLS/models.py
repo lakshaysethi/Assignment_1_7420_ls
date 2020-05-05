@@ -18,8 +18,6 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username}\'s Profile'
 
-
-
 class Post(models.Model):
     title= models.CharField(max_length=250)
     image = models.ImageField( null=True,blank=True,upload_to='posts')
