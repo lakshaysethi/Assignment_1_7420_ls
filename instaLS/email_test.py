@@ -2,10 +2,8 @@ import os
 import smtplib
 from email.message import EmailMessage
 import imghdr 
-EMAIL_ADDRESS = 'pythondjangolakshay@gmail.com'
-# os.environ.get('EMAIL_USER')
-EMAIL_PASSWORD = 'testing321'
-# os.environ.get('EMAIL_PASS')
+EMAIL_ADDRESS =  os.environ.get('EMAIL_USER')
+EMAIL_PASSWORD =  os.environ.get('EMAIL_PASS')
 
 
 def test_email():
