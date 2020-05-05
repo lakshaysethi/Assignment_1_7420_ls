@@ -381,9 +381,11 @@ need the following code for visual studio activate:
 ### chat
 ### comments
 ### notification
+```
 DONE learn how to send email notification 
-	check test_email.py
+	DONE check test_email.py
 learn to make environment variable 
+	in windows
 unusual activity - someone login to your account 
 	someone login from different country- detect from IP what is location and send notification if it is a different country than the sign up country
 
@@ -395,7 +397,7 @@ when someone like our post
 when someone comment on our post
 when someone follow us 
 	
-
+```
 ## tasks completed
 
 ## problems and solutions
