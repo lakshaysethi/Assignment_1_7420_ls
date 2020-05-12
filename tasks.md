@@ -29,3 +29,44 @@ and add rough time estimates to each task. Estimates should be no longer than 8 
 >-  
 >-
 >-
+
+
+>### Task 4 - Setup and use Cloudflare for protection 
+>#### estimate: 1.5 hr maximum
+>#### sub tasks
+>-  
+>-  
+>-
+>-
+
+>### Task 5 -Setup a custom domain name and configure DNS for your application
+>#### estimate: 1.5 hr maximum
+>#### sub tasks
+>-  
+>-  
+>-
+>-
+
+>### Task 6 - Setup and use Sentry to track Django exceptions/errors
+>#### estimate: 1.5 hr maximum
+>#### sub tasks
+>-  
+>-  
+>-
+>-
+
+>### Task 7 - Setup and configure Redis on Heroku as an application cache  
+>#### estimate: 1.5 hr maximum
+>#### sub tasks
+>-  
+>-  
+>-
+>-
+
+>### Task 8 - 
+>#### estimate: 1.5 hr maximum
+>#### sub tasks
+>-  
+>-  
+>-
+>-
