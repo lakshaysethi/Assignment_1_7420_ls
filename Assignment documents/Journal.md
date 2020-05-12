@@ -440,7 +440,8 @@ created a github issue about this and added @krisp to it to get help
 ### project:InstaLS(django assignmnet)
 ### tasks planned 
 1. read the assignment marking criteria and check what I have done
-2.
+2.Deploy the web application on Heroku - 1.5hr max
+3. setup S3 - 1 hr max
 ### tasks completed
 
 ### problems and solutions
