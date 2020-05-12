@@ -20,3 +20,12 @@ and add rough time estimates to each task. Estimates should be no longer than 8 
 >-  
 >-
 >-
+
+
+>### Task 3 - Create a PostgreSQL instance on Heroku and connect it your web application. 
+>#### estimate: 1.5 hr maximum
+>#### sub tasks
+>-  
+>-  
+>-
+>-
