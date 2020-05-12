@@ -10,3 +10,13 @@ and add rough time estimates to each task. Estimates should be no longer than 8 
 >- follow along the video 
 >-
 >-
+
+
+
+>### Task 2 - Deploy your web application on Heroku
+>#### estimate: 1.5 hr maximum
+>#### sub tasks
+>-  
+>-  
+>-
+>-
