@@ -435,11 +435,11 @@ created a github issue about this and added @krisp to it to get help
 >* https://www.youtube.com/watch?v=R0hpSIPqZek  
 
 
-# Start date and time: 05 may 2020 2:00 PM - 4:30PM
+# Start date and time: 12 May 2020 3:00 PM - 4:30PM
 
 ### project:InstaLS(django assignmnet)
 ### tasks planned 
-1.
+1. read the assignment marking criteria and check what I have done
 2.
 ### tasks completed
 
@@ -448,3 +448,6 @@ created a github issue about this and added @krisp to it to get help
 ### notes
 
 ### resources used
+
+
+
