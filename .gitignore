@@ -396,3 +396,4 @@ fabric.properties
 .vscode/settings.json
 
 
+venv/
