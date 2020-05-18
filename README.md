@@ -1,4 +1,7 @@
+The app is hosted here : https://instals.herokuapp.com/
+
 # Assignment-1-7420-ls
+
 this is the Lakshay's simple instagram web app 
 Features implemented:
 1. user login and registrations so if users want to keep some photos private they can
