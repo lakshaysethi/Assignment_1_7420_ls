@@ -103,8 +103,8 @@
 
     $('.option').click(function () {
         emojiid = $(this).find('.emojiid').val()
-
-        $.post('{% url "like" %}', { 'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value, 'postId': $(this).find('.postid').val(), 'emoji': emojiid })
+        sendthis = { 'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value, 'postId': $(this).find('.postid').val(), 'emoji': emojiid }
+        $.post('{% url "like" %}', sendthis)
         
         var index = $(this).parent().parent().parent().find('.cuttentOption').attr('class').indexOf(`${emojiid}`)
         
