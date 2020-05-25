@@ -17,3 +17,20 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ['date_posted', ]
     
 admin.site.register(Post,PostAdmin)
+
+
+
+class ByInline(admin.TabularInline):
+    model = Post
+
+
+
+class ProfileAdmin(admin.ModelAdmin):
+    inlines = [ByInline,]
+    
+admin.site.register(Profile,ProfileAdmin)
+    
+
+
+
+
