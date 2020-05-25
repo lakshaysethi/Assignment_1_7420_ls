@@ -33,7 +33,7 @@ def start(request):
                 msg = "your account was created successfully please log in now"
                 # messages.add_message(request, level, message, extra_tags='', fail_silently=False)
                 messages.add_message(request, messages.INFO, msg)
-                email_test.send_email(user.email,user.username,msg,'Welcome to instaLS')
+                #email_test.send_email(user.email,user.username,msg,'Welcome to instaLS')
                 # A backend authenticated the credentials
                 return redirect( 'login')
     except IntegrityError:
@@ -127,7 +127,7 @@ def profile(request):
 
 
 def like(request):   
-    email_test.print_email()
+    # email_test.print_email()
     #email_test.like_email() 
     if request.method == 'POST':
         #print("the post you liked is :"+ request.POST.get('postId'))
