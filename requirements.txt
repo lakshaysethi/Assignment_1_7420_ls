@@ -5,6 +5,7 @@ botocore==1.16.16
 click==6.7
 colorama==0.4.3
 configobj==5.0.6
+dj-database-url==0.5.0
 Django==3.0.6
 django-crispy-forms==1.9.1
 django-extensions==2.2.9
@@ -14,7 +15,9 @@ docutils==0.15.2
 gunicorn==20.0.4
 jmespath==0.10.0
 Pillow==7.1.2
+pkg-resources==0.0.0
 prompt-toolkit==1.0.18
+psycopg2==2.8.5
 pyasn1==0.4.8
 Pygments==2.6.1
 python-dateutil==2.8.1
@@ -29,5 +32,3 @@ urllib3==1.25.9
 wcwidth==0.1.9
 Werkzeug==1.0.1
 whitenoise==5.0.1
-dj-database-url==0.5.0
-gunicorn==20.0.4
