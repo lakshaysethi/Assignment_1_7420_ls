@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
     'instaLS.apps.InstalsConfig',
     'crispy_forms',
+    'django_werkzeug',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,12 +80,28 @@ WSGI_APPLICATION = 'Assignment_1_7420_ls.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+DATABASES = {   
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'ec2-52-44-55-63.compute-1.amazonaws.com',
+        'NAME': 'd6e2tirm7t9i3g',
+        'USER': 'yvosenamazwswo',
+        'PORT':'5432',
+        'PASSWORD':'74c3bb0327b76eaa8cf8648f1b6ef735d331ed48136dcf2da65cd16ae136b4a5',
     }
 }
+
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
@@ -124,7 +141,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/assets') 
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
