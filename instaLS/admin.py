@@ -20,13 +20,13 @@ admin.site.register(Post,PostAdmin)
 
 
 
-class ByInline(admin.TabularInline):
+class PostInline(admin.TabularInline):
     model = Post
 
 
 
 class ProfileAdmin(admin.ModelAdmin):
-    inlines = [ByInline,]
+    inlines = [PostInline,]
     
 admin.site.register(Profile,ProfileAdmin)
     
