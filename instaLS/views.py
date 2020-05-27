@@ -15,6 +15,7 @@ from .models import Post, Profile, Like
 from . import email_test
 
 import time as timer_wait
+from .send_email import sendEmailWithSendGrid
 
 def start(request):
     title = 'Welcome!'
@@ -29,7 +30,7 @@ def start(request):
             user = User.objects.create_user(username, email, password)
 
             if user is not None:
-
+                sendWelcomeEmail(user)
                 msg = "your account was created successfully please log in now"
                 # messages.add_message(request, level, message, extra_tags='', fail_silently=False)
                 messages.add_message(request, messages.INFO, msg)
@@ -223,3 +224,9 @@ def search(request):
 
 
 
+def sendWelcomeEmail(user):
+    customMessage = {'to_emails':user.email,
+                    'subject':'Welcome to Activity Management System',
+                    'plain_text_content' : f'Welcome {user.username}',
+                    'html_content': f'<h1>Welcome! {user.username}</h1><p>Thanks for joining</p>'}
+    
