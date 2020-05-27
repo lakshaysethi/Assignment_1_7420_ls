@@ -230,3 +230,4 @@ def sendWelcomeEmail(user):
                     'plain_text_content' : f'Welcome {user.username}',
                     'html_content': f'<h1>Welcome! {user.username}</h1><p>Thanks for joining</p>'}
     
+    sendEmailWithSendGrid(customMessage)
