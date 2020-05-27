@@ -27,5 +27,6 @@ def sendEmailWithSendGrid(customMessage):
         print(response.headers)
         print('sent')
     except Exception as e:
+        print("ERRORRRRRRRRRRRRRRRRRRRRRRRRRRRRR")
         print(e)
         print(e.body)
