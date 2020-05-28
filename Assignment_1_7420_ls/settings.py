@@ -80,23 +80,23 @@ WSGI_APPLICATION = 'Assignment_1_7420_ls.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-# DATABASES = {   
+# DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'HOST': 'ec2-52-44-55-63.compute-1.amazonaws.com',
-#         'NAME': 'd6e2tirm7t9i3g',
-#         'USER': 'yvosenamazwswo',
-#         'PORT':'5432',
-#         'PASSWORD':'74c3bb0327b76eaa8cf8648f1b6ef735d331ed48136dcf2da65cd16ae136b4a5',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+DATABASES = {   
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'ec2-52-44-55-63.compute-1.amazonaws.com',
+        'NAME': 'd6e2tirm7t9i3g',
+        'USER': 'yvosenamazwswo',
+        'PORT':'5432',
+        'PASSWORD':'74c3bb0327b76eaa8cf8648f1b6ef735d331ed48136dcf2da65cd16ae136b4a5',
+    }
+}
 
 
 import dj_database_url
@@ -185,4 +185,4 @@ EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-DEFAULT_FROM_EMAIL = 'info@lakshaysethi.com'
+DEFAULT_FROM_EMAIL = 'lakshaynew@gmail.com'
