@@ -3,6 +3,7 @@ import celery
 from django.conf import settings
 app = celery.Celery('instaLS')
 import os
+settings.configure()
 app.conf.update(BROKER_URL=os.environ['REDIS_URL'],
                 CELERY_RESULT_BACKEND=os.environ['REDIS_URL'])
 
