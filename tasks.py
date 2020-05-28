@@ -11,7 +11,11 @@ app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 
 @app.task
 def add(x, y):
-    sleep(30)
+    print("please wait im adding maybe you want to count till 30?")
+    for i in range(0,30):
+        sleep(1)
+        print(i)
+        print(x+y)
     return x + y
 
 # git push heroku master
