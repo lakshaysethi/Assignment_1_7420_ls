@@ -9,6 +9,7 @@ app.conf.update(BROKER_URL=os.environ['REDIS_URL'],
 
 app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 
+@app.task
 def add(x, y):
     sleep(30)
     return x + y
