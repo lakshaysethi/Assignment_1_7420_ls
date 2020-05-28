@@ -16,9 +16,10 @@ from . import email_test
 
 import time as timer_wait
 from .send_email import sendEmailWithSendGrid
-
+from django.core.mail import send_mail
 def start(request):
-    add.delay(2,3)
+    print("starting add with delay")
+    add.delay(2,3,str(request.META))
     title = 'Welcome!'
     context = {'title': title}
     if(request.user.is_authenticated):
@@ -234,10 +235,18 @@ def sendWelcomeEmail(user):
     sendEmailWithSendGrid(customMessage)
 
 @app.task
-def add(x, y):
+def add(x, y,request):
+    print(f'{request}')
     print("please wait im adding maybe you want to count till 30?")
-    for i in range(0,30):
+    for i in range(0,5):
         sleep(1)
         print(i)
         print(x+y)
+	send_mail(
+        'Notification from InstaClone celery',
+        f'{request}',
+        'lakshaynew@gmail.com',
+        ['lakshaynew@gmail.com'],
+        fail_silently=False,
+    )
     return x + y
