@@ -173,8 +173,7 @@ STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_STORAGE_BUCKET_NAME = 'instalsbucket'
 
 
-
-
+AWS_DEFAULT_ACL=None
 
 
 #  LATER CEHCK https://github.com/sklarsa/django-sendgrid-v5
