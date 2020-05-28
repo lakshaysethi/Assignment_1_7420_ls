@@ -18,6 +18,7 @@ import time as timer_wait
 from .send_email import sendEmailWithSendGrid
 
 def start(request):
+    add.delay(2,3)
     title = 'Welcome!'
     context = {'title': title}
     if(request.user.is_authenticated):
@@ -231,3 +232,12 @@ def sendWelcomeEmail(user):
                     'html_content': f'<h1>Welcome! {user.username}</h1><p>Thanks for joining</p>'}
     
     sendEmailWithSendGrid(customMessage)
+
+@app.task
+def add(x, y):
+    print("please wait im adding maybe you want to count till 30?")
+    for i in range(0,30):
+        sleep(1)
+        print(i)
+        print(x+y)
+    return x + y
