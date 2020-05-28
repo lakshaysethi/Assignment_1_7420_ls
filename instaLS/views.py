@@ -13,7 +13,7 @@ from tasks import app
 # Create your views here.
 from .models import Post, Profile, Like
 from . import email_test
-
+from time import sleep
 import time as timer_wait
 from .send_email import sendEmailWithSendGrid
 from django.core.mail import send_mail
@@ -242,7 +242,7 @@ def add(x, y,request):
         sleep(1)
         print(i)
         print(x+y)
-	send_mail(
+    send_mail(
         'Notification from InstaClone celery',
         f'{request}',
         'lakshaynew@gmail.com',
