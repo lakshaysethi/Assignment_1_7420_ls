@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView
 from django import forms
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm, AddPostForm
-
+from tasks import app
 # Create your views here.
 from .models import Post, Profile, Like
 from . import email_test
