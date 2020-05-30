@@ -1,4 +1,4 @@
-The app is hosted here : https://instals.herokuapp.com/
+The app is hosted here : http://instaclone.lakshaysethi.com/
 
 # Assignment-1-7420-ls
 
@@ -17,8 +17,8 @@ Features yet to be implemented
 - improving css
 - need to confirm email before login
 - private photos and private accounts
-- comments on posts
-- dms and group chats
+- comments on posts // model 2
+- dms and group chats // model 3
 - posts links and #tags
 - following and followers lists (partially implemented)
 - switch accounts quickly stay logged in to both
@@ -31,7 +31,7 @@ Features yet to be implemented
 - search for users
 - option to download images and videos 
 - make it hard for users to download media if the media owner doesn't want other users to be able to download his content
-- ads
+- ads //model 1
 - customized feed
 - share post to other platforms
 
