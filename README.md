@@ -15,7 +15,8 @@ Features implemented:
 Features yet to be implemented 
 - ads //model 1
 - comments on posts // model 2
-- dms and group chats // model 3
+- chat/dms // model 3
+- group chats // model 4
 - filter posts based on your reaction to a post
 - conversation to progressive web app
 - improving css
