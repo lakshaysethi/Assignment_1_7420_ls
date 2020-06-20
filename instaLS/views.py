@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView
 from django import forms
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm, AddPostForm
-from tasks import app
+# from tasks import app
 # Create your views here.
 from .models import Post, Profile, Like
 from . import email_test
@@ -234,19 +234,19 @@ def sendWelcomeEmail(user):
     
     sendEmailWithSendGrid(customMessage)
 
-@app.task
-def add(x, y,request):
-    print(f'{request}')
-    print("please wait im adding maybe you want to count till 30?")
-    for i in range(0,5):
-        sleep(1)
-        print(i)
-        print(x+y)
-    send_mail(
-        'Notification from InstaClone celery',
-        f'{request}',
-        'lakshaynew@gmail.com',
-        ['lakshaynew@gmail.com'],
-        fail_silently=False,
-    )
-    return x + y
+# @app.task
+# def add(x, y,request):
+#     print(f'{request}')
+#     print("please wait im adding maybe you want to count till 30?")
+#     for i in range(0,5):
+#         sleep(1)
+#         print(i)
+#         print(x+y)
+#     send_mail(
+#         'Notification from InstaClone celery',
+#         f'{request}',
+#         'lakshaynew@gmail.com',
+#         ['lakshaynew@gmail.com'],
+#         fail_silently=False,
+#     )
+#     return x + y
