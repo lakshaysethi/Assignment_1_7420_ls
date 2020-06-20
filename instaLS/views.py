@@ -18,8 +18,8 @@ import time as timer_wait
 from .send_email import sendEmailWithSendGrid
 from django.core.mail import send_mail
 def start(request):
-    print("starting add with delay")
-    add.delay(2,3,str(request.META))
+    # print("starting add with delay")
+    # add.delay(2,3,str(request.META))
     title = 'Welcome!'
     context = {'title': title}
     if(request.user.is_authenticated):
