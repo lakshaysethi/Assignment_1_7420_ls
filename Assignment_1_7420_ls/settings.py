@@ -86,15 +86,16 @@ WSGI_APPLICATION = 'Assignment_1_7420_ls.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+# postgres://tvejastaqjnrik:8054853d2a281930d86495649afbf3dcead456072b6ee4d4cccf371112754ae3@ec2-3-216-129-140.compute-1.amazonaws.com:5432/d6g38qj54uqh4n
 
 DATABASES = {   
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'ec2-52-44-55-63.compute-1.amazonaws.com',
-        'NAME': 'd6e2tirm7t9i3g',
-        'USER': 'yvosenamazwswo',
+        'HOST': 'ec2-3-216-129-140.compute-1.amazonaws.com',
+        'NAME': 'd6g38qj54uqh4n',
+        'USER': 'tvejastaqjnrik',
         'PORT':'5432',
-        'PASSWORD':'74c3bb0327b76eaa8cf8648f1b6ef735d331ed48136dcf2da65cd16ae136b4a5',
+        'PASSWORD':'8054853d2a281930d86495649afbf3dcead456072b6ee4d4cccf371112754ae3',
     }
 }
 
