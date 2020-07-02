@@ -24,3 +24,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
     queryset = Profile.objects.all()
     permission_classes =[permissions.AllowAny]
     serializer_class = serializer.ProfileSerializer
+
+
+
+    

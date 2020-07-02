@@ -1,6 +1,48 @@
 from rest_framework import serializers
 from instaLS.models import Like,Profile,Post
 
+
+class DataAnalyser:
+    topUser = calculateTopUser(1)   #the one with the most posts
+    maxPostsPerUser = calculateTopUser(1) #the one with the most likes/reactions
+    topPost = calculateTopUser(2)   
+    maxLikes = calculateTopPost(2)
+
+    def DataAnalyser(self):
+
+
+    def calculateTopUser(num):
+        mostPostsPerProfile = 0
+        bestProfile = None
+        for(profile in Profile.objects.all()):
+            if (getNumberOfPosts(profile)>mostPostsPerProfile):
+                mostPostsPerProfile = getNumberOfPosts(profile)
+                bestProfile = profile
+        if(num == 2):
+            return mostPostsPerProfile
+        else:
+            return bestProfile
+
+
+    def calculateTopPost(num):
+            mostLikesPerPost = 0
+            bestPost = None
+            for(Post in Post.objects.all()):
+                if (getNumberOfLikes(Post)>mostLikesPerPost):
+                    mostLikesPerPost = getNumberOfLikes(Post)
+                    bestPost = Post
+            if(num == 2):
+                return mostLikesPerPost
+            else:
+                return bestPost
+    
+    def getNumberOfPosts(profile):
+        return profile.post_set().count
+    
+    def getNumberOfLikes(Post)
+        return Post.like_set().count
+
+
 class LikeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Like
@@ -19,3 +61,7 @@ class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = '__all__'
+
+
+
+
