@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path,include
 
 from . import views
 from django.contrib.auth import views as auth_views
@@ -8,20 +8,21 @@ from .  import api
 
 router = routers.DefaultRouter()
 
-router.register('api/posts',api.PostViewSet,'all-posts')
-router.register('api/likes',api.LikeViewSet,'all-likes')
-router.register('api/profiles',api.ProfileViewSet,'all-profiles')
+router.register('posts',api.PostViewSet,'all-posts')
+router.register('likes',api.LikeViewSet,'all-likes')
+router.register('profiles',api.ProfileViewSet,'all-profiles')
 
-router.urls.pop()
-router.urls.pop()
+# router.urls.pop()
+# router.urls.pop()
 
 
 
 urlpatterns = [
 
 
-    path('', views.start, name='start'),
-    path('login/', views.loginUser, name='login'),
+path('', views.start, name='start'),
+path('api/',include(router.urls)),
+path('login/', views.loginUser, name='login'),
 #path('forgot/', views.forgot, name='forgot'),
 path('profile/', views.profile, name='profile'),
 path('profile/edit/', views.editProfile, name='edit-profile'),
@@ -50,7 +51,7 @@ path('reset_password_complete/',
         auth_views.PasswordResetCompleteView.as_view(template_name="accounts/password_reset_done.html"),
         name="password_reset_complete"),
 
-]+router.urls
+]
 
 
 
