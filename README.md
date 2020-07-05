@@ -2,7 +2,9 @@ The app is hosted in heroku  here : http://instaclone.lakshaysethi.com/
 and the app running from a docker image in google cloud  is hosted here: http://insta-docker.lakshaysethi.com/
 and the app running from a docker image in AWS is hosted here: http://insta-docker-aws.lakshaysethi.com/
 
-# Assignment-1-7420-ls
+[discussion](https://github.com/lakshaysethi/Assignment_1_7420_ls/edit/Assignment-2/Assignment%20documents/discussion.md)
+
+# About InstaClone - Assignment-7420
 
 this is the Lakshay's simple instagram web app 
 Features implemented:
