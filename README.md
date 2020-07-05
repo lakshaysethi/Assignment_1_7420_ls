@@ -1,5 +1,5 @@
 The app is hosted here : http://instaclone.lakshaysethi.com/
-
+and the docker image is hosted here: http://insta-docker.lakshaysethi.com/
 # Assignment-1-7420-ls
 
 this is the Lakshay's simple instagram web app 
