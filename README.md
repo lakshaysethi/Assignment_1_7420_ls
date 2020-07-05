@@ -45,9 +45,6 @@ possible featres
 2. search photos by title description
 
 
-https://www.youtube.com/watch?v=ndGw375nTqI&list=PLBOh8f9FoHHjtZJFAYKQRT_sRunC5M0tA&index=2&t=0s
-
-
 class Diagram will look somwhat like this:
 #### 
 ![](https://i.imgur.com/HLYDzQZ.png)
