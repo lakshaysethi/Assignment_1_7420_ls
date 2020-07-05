@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1i*ddp+2$-+ylh)s!g)b^l)*cgan8@yi-_^^5=1j)mp=k@rpjt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['instaclone.lakshaysethi.com','instals.herokuapp.com','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['insta-docker.lakshaysethi.com','instaclone.lakshaysethi.com','instals.herokuapp.com','127.0.0.1','localhost']
 
 
 # Application definition
