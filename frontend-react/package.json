@@ -17,7 +17,7 @@
     "eject": "react-scripts eject"
   },
 
-  "proxy": "http://insta-docker-aws.lakshaysethi.com",
+  "proxy": "insta-docker-aws.lakshaysethi.com",
   "browserslist": {
     "production": [
       ">0.2%",
