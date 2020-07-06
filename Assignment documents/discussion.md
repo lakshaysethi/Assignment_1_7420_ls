@@ -26,12 +26,23 @@
     - It can be used for managing issues from users and testers with a current version using the issues tab
     - we  can upload our code to it and it keeps a good history of all the changes we made to the code wing commits. we can see the differences
 6. What is Kanban and what is it used for? 
-    - kan ban is used to devidde wo
+    - kanban is used to devide work into small parts and then assign it between people working in software development or any other field as well- kanban is japanese for billboards. A common kanban style board includes 3 boards with titles as backlog or todo  then dong now and then done 
+    each Sprint can have its own kanban board.
 7. What is Markdown and what is it used for?
-
+    - markdown is a lightweight markup language with plain-text-formatting syntax. we can use it to write documentation or any thing really - but its not a fire that will run the code - it can have code snippets but its usually not used as a file to be read by interpreters and execute code from. There are many markdown readers that read and display markdown and - just lik browsers read and display HTML code
 ## Platform vs Infrastructure: -
 8. What are some of the pros and cons of using Platform-as-a-Service (PaaS) providers such as Heroku?
+    #### pros 
+    - quick to setup and host/deploy simple apps
+    - easy/ has lots of support from the service provider - and sometimes has arge number of users so it can be 
+    #### cons
+    - does not support or have all the features that IaaS might offer (limited capability)
+    - expensive
 9.  What are some of the pros and cons of using Infrastructure-as-a-Service providers such as Amazon?
+    #### pros 
+    - 
+    #### cons
+    - 
 ## Web Frameworks
 10. What is Django?
 11. What are some of its useful features? 
