@@ -31,5 +31,6 @@
     ]
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage":"/aws-react"
 }
