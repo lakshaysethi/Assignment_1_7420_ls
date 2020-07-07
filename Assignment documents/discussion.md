@@ -161,7 +161,7 @@ so what I unserand is that this is a place to store user data in the browser.
 it isent accessable across different browsers
 session storage's scope is limited to the current tab in the browser and gets deleted when the tab is closed
 localStorage can store more data like 10 mb than sessionStorage (5mb)and local storage persistes until the user manually deletes it
-I think I used localStorages in my apps at https://goals.lakshaysethi.com
+I think I used localStorages in some of my  apps at https://lakshaysethi.com
 38. What is a library like Material-UI used for? 
 Material UI has many premade ReactJS componets that we can use in our web apps 
 on their website they say that thier goal is making React UIs development easier, better, and accessible to more people.
@@ -170,9 +170,15 @@ we can copy and past their code and modify it according to our requirements but 
 39. Why do we run apt-get update && apt-get install -y in one command when using Docker? 
 
 40. What are Docker containers and what are the pros and cons of using them?
+    - Docker containers are are os free 
 41. What is the difference between ADD and COPY with Docker?
 42. What is a .dockerignore file used for?
-43. What is Kubernetes and why didn’t we use it? 
+
+43. What is Kubernetes and why didn’t we use it?
+    - it is an open-source system for automating deployment, scaling, and management of containerized applications.
+    - so what I unserstand is that it is a system that automatically checks the demands in usages and deploys more containers if needed to habndel the load  of an app/ API
+    - According to Kris:
+    > When there multiple containers or versions of our website running in the cloud, some backend and frontend container servers might have different versions at a given time.That's when we need to use a software for managing them, such as Kubernetes.However Kubernetes is  complex therefore its usually if we have 1000+ containers running.
 ## Deployment: 
 44. What is Amazon S3 used for? 
     - S3 is a cloud storage offered by amazon - we can use it to host staric files to the public or
@@ -193,6 +199,7 @@ we can copy and past their code and modify it according to our requirements but 
     - IBM Cloud
 
 48. What is Sentry and what is it used for? 
+    - Sentry is an Error Alerting system that Sends notifications to project/app owners/developers when something goes wrong in the system/ when some error occurs - this is really good during production as one needs to know if something is not right and when it happens
 49. What is Cloudflare and what is it used for? 
     - Cloudflare is used to manage DNS and other important Domain related stuff like SSL and DNSSEC. 
     -  it offer's its own name servers for user's Domains
