@@ -110,16 +110,47 @@ the main purpose of DRF is to help make a REST  API for our django application s
 DRF provides a way to serialize and deserialize models much like the django forms.- we need this inorder to send and recieve data to and from our API
 DRF also provies a default router that  helps us make url patterns and we can specify permission levels for access to the api 
 27. What is serialization and why do we use it?
-
+we use serialization to convert objects into strings
+this is done to convert complex data into a simpler string form so that it is easy to send this over the internet/network
 28. Which type of object serialization notation is most commonly used on the web?
+JSON
+XML
 29. What is Postman and what is it used for?
+postman is software that makes it easy to make any kind of request to an API endpoint and  test the output from it
+we can even put headers with our requests -
+it provied a good GUI for all this and we can also store our  API links and queries in the software for testing at a later point 
 30. What are websockets and what are they used for? Javascript: 
+dont know
 31. What is NodeJS and how is it different from in-browser Javascript?
+NodeJS is something that allows us to run javascript outside the browser - in essence it makes the V8 JavaScript engine which is used in major browsers today available outside of the browser. And so now JS can be used as a backend language aswell instead of just being used in the frontend
+now we can use it to write to files and databases and even sontrol the system it is running on.
+the other differences are that the JS in use in NodeJS uses up to date ES6/ES7/ES8 where as  browsers still use old versions of JS so they cant read and run the code without dependencies.
 32. What is npm and what is it used for?
+npm is Node package manager
+it is like pip 
+it allows us to use packages/modules written by other developers
+so that we dont have to recreate the wheels from scratch
+we can do `npm init` and it makes a package.json file which has very useful info abou the dependencies of this node project we are working on 
+npm packages like Express are really useful and we can do npm intall express and it creates a new entry in the dependiencies field in the package.json
+this is really useful because it has become a standard any allows people to not have to upload/ share a copy of all dependencies of a project and make the new project light weight
+npm also has scripts supports  the run command  like run build / start/ test 
 33. What is ES6? List the names of 3 features that ES6 provides.
+it is the 2016 version of JS caled ECMAScript 6
+new syntax like
+arrows `=>`  or `()=>{}`
+template strings
+modules- using `import`
+promises
 34. What is ReactJS and what is it used for?
+ReactJS is a JS library
+ReactJS is made by Facebook and they and now many companies use it to make their front end   - it is a virtual dom -
+reactJS allows for an individual component to be updated instead of the whole html to be reloaded
+react uses JSX which is like html but better as we can make our own custom components which have custom tags gor example `<MyCoolCustomComponentThatHasOtherComponentInIt />`
 35. List two popular alternative Javascript libraries to ReactJS. 
+VueJS
+Angular
 36. What is the DOM? What is a virtual DOM?
+
 37. What is the difference between sessionStorage and localStorage? 
 38. What is a library like Material-UI used for? Docker: 
 39. Why do we run apt-get update && apt-get install -y in one command when using Docker? 
