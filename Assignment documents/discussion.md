@@ -1,67 +1,61 @@
 # Questions
-
 1. When would you prefer to develop an Assignment 1.  style web aplication (Server-side rendering, serving HTML)?
-    - for simple apps which dont require **many** changes to the front end quickly
-    - also If I want to get something finished quickly I will not bother making a react front end for it just make the server side templates
-
+- for simple apps which dont require **many** changes to the front end quickly
+- also If I want to get something finished quickly I will not bother making a react front end for it just make the server side templates
 2. When would you prefer an  one (REST API & Single Page Application)?
-    - rest api is good to have for any large scale application so that you can also allow other developers to create custom versions of the front end and serve users in a customized way.
-    - Also if I want to monetize the data sent from my backend to the anyone who wants to use my api's I will use REST API
-    - if I am building something like facebook or a really big app
-    - I'll use a Single page app that uses client side rendering of data to save the cost of running my servers.
-
+- rest api is good to have for any large scale application so that you can also allow other developers to create custom versions of the front end and serve users in a customized way.
+- Also if I want to monetize the data sent from my backend to the anyone who wants to use my api's I will use REST API
+- if I am building something like facebook or a really big app
+- I'll use a Single page app that uses client side rendering of data to save the cost of running my servers.
 ## Version Control
-
 3. What is git and what is it used for?
-    - Git  is a version control system for tracking changes in source code during software development. 
-    - It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
-    - However it works best with programming files and not with other media and document types like mp4 or docx 
+- Git  is a version control system for tracking changes in source code during software development. 
+- It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
+- However it works best with programming files and not with other media and document types like mp4 or docx 
 4. List 3 git commands you’ve learned in this course.
-    - git commit
-    - git diff
-    - git push
+- git commit
+- git diff
+- git push
 5. What is GitHub and what is it used for?
-    - github uses Git, a version control system for software development
-    - it is a Git repository hosting service, we can use it to collaborate on a big programming projects to merge the code of all the colaborators
-    - It can be used for managing issues from users and testers with a current version using the issues tab
-    - we  can upload our code to it and it keeps a good history of all the changes we made to the code wing commits. we can see the differences
+- github uses Git, a version control system for software development
+- it is a Git repository hosting service, we can use it to collaborate on a big programming projects to merge the code of all the colaborators
+- It can be used for managing issues from users and testers with a current version using the issues tab
+- we  can upload our code to it and it keeps a good history of all the changes we made to the code wing commits. we can see the differences
 6. What is Kanban and what is it used for? 
-    - kanban is used to devide work into small parts and then assign it between people working in software development or any other field as well- kanban is japanese for billboards. A common kanban style board includes 3 boards with titles as backlog or todo  then dong now and then done 
-    each Sprint can have its own kanban board.
+- kanban is used to devide work into small parts and then assign it between people working in software development or any other field as well- kanban is japanese for billboards. A common kanban style board includes 3 boards with titles as backlog or todo  then dong now and then done 
+each Sprint can have its own kanban board.
 7. What is Markdown and what is it used for?
-    - markdown is a lightweight markup language with plain-text-formatting syntax. we can use it to write documentation or any thing really - but its not a fire that will run the code - it can have code snippets but its usually not used as a file to be read by interpreters and execute code from. There are many markdown readers that read and display markdown and - just lik browsers read and display HTML code
+- markdown is a lightweight markup language with plain-text-formatting syntax. we can use it to write documentation or any thing really - but its not a fire that will run the code - it can have code snippets but its usually not used as a file to be read by interpreters and execute code from. There are many markdown readers that read and display markdown and - just lik browsers read and display HTML code
 ## Platform vs Infrastructure: -
 8. What are some of the pros and cons of using Platform-as-a-Service (PaaS) providers such as Heroku?
-    #### pros 
-    - quick to setup and host/deploy simple apps
-    - easy/ has lots of support from the service provider - and sometimes has large number of users so it can be easy to find answers to problems and to debug
-    #### cons
-    - does not support or have all the features that IaaS might offer (limited capability)
-    - expensive
+#### pros 
+- quick to setup and host/deploy simple apps
+- easy/ has lots of support from the service provider - and sometimes has large number of users so it can be easy to find answers to problems and to debug
+#### cons
+- does not support or have all the features that IaaS might offer (limited capability)
+- expensive
 9.  What are some of the pros and cons of using Infrastructure-as-a-Service providers such as Amazon?
-    #### pros 
-    - is cheaper than PaaS
+#### pros 
+- is cheaper than PaaS
 - easier to scale
 - many more services than PaaS are available at a good price
-    #### cons
-    - it can be complicated to set up for the general user.
+#### cons
+- it can be complicated to set up for the general user.
 - companies try to lock down a customer with their setup time investment and complex setup.
 ## Web Frameworks
 10. What is Django?
 - it is a python web framework- which can be used to build both an api just -backend and also a complete package (Front and back)
 11. What are some of its useful features? 
-    - ORM
-    - Forms
-    - Templates and views
-    - admin backend 
-
+- ORM
+- Forms
+- Templates and views
+- admin backend 
 12. What is a model?
-    - it is like a class - when we make a class diagram we can make all models exacly as the classes in the class diagram 
-    - we can make custom models for any kind of object we want in our app
-    - 
+- it is like a class - when we make a class diagram we can make all models exacly as the classes in the class diagram 
+- we can make custom models for any kind of object we want in our app
+- 
 13. What is a view?
-    - these are functions that are run when a URL is used to send a request to the server. Eg when we make a post request to the server using the URL pattern like Mysite.com/make-post/ then the function attached to it (the view) will be run
-
+- these are functions that are run when a URL is used to send a request to the server. Eg when we make a post request to the server using the URL pattern like Mysite.com/make-post/ then the function attached to it (the view) will be run
 14. Name two other popular non-Python web frameworks.
 Laravel for php
 Spring for Java
@@ -73,41 +67,32 @@ This is a cooler version of WSGI it basically does the same thing but also suppo
 Celery is a vegetable that all students need to eat to be able to get the vitamins needed to do programming.
 Jk
 Celery is a task queue
-
 The way I understand it is that is like a list made by a waiter at a restaurant. The waiter takes orders from the customers as they come
-
 This waiter is using digital list.
 The kitchen staff is like a worker that makes the dishes one by one.
 Celery is a list of tasks (but works as a queue data structure ) and workers keep checking the list for new tasks and do them.
-
 Tasks can be like sending an email or more complex which take more than a few milliseconds
-
 Like processing a video.
 The main reason I use it is to make my websites perform better and for a better UX. As I don't want to keep the users waiting and have no feedback about what's going on when the tasks are taking long
 ## Databases
 18. What is PostgreSQL?
 Its an open source relational  database management system.
-
 19. Using StackShare, list 3 well-known companies that use PostgreSQL. 
 Uber
 Netflix
 Instagram
 Stackshare
-
 20. List two other well-known databases.
 Firebase firestore
 mysql
 Sqlite
 Mongodb
 21. What are some of the pros and cons of using an Object Relational Mapper (ORM)?
-
 Pros
 Don't have to write the SQL queries for the relationship for the models or classes in our app.
 Makes it easy to migrate data between different databases
-
 Cons
-Complex queries can lead to performed issues
-
+Complex queries can lead to performance issues
 22. What is the purpose of database migrations?
 23. What is redis and what are two things it can be used for?
 24. Why do we use caches? HTTP & REST: 
