@@ -175,13 +175,57 @@ we can copy and past their code and modify it according to our requirements but 
 43. What is Kubernetes and why didn’t we use it? 
 ## Deployment: 
 44. What is Amazon S3 used for? 
+    - S3 is a cloud storage offered by amazon - we can use it to host staric files to the public or
+     to store important data or  files that need to backed up and needs to be super secure.
+     it allows users to set different options on how secure they want their data to be.
 45. What is Amazon ECS? 
+    - Elastic Container service is amazon's service for helping people run and manage their containers in the same backed used by EC2
 46. What is the difference between ECS Fargate and EC2? 
+    - EC2  bascially is a Virtual machine offering by AWS. Users can make any kind of virtual machine and access it from anywhere in the world.
+    it comes with all the good features of VMs like Snapshots etc.
+    these can be configured to use any kind of hardware and run different software images.
+    // dont know about Fargate 
+
 47. Name 3 other cloud providers. 
+    - Google Cloud platform
+    -  Microsoft Azure
+    - Alibaba Cloud
+    - IBM Cloud
+
 48. What is Sentry and what is it used for? 
 49. What is Cloudflare and what is it used for? 
+    - Cloudflare is used to manage DNS and other important Domain related stuff like SSL and DNSSEC. 
+    -  it offer's its own name servers for user's Domains
+    - in my experience it is fast to add DNS records and these records get updated very quickly.- we can add Cname records and A records - and have our domain name added to our hosed app
+
 50. What is SendGrid and what is it used for? 
+    - Send grid is a company that offers digital marketing services to users like Email marketing and SMS marketing 
 51. What is the difference between a DNS A record and a CNAME record?
+    - I use A records for masking ip adresses and CNAME records for masking other domains like I used an A record to mask ip address of google Firebase and a CNAME record for amsking my AWS S3 publicaly hosted bucket 
 ## Meta: 
 52. What are some of the mistakes or difficulties you encountered in developing these 2 assignments? 
+#### difficulties
+- difficulty focusing due to the my environment being very cold and especially my hands and feet get very cold in cold environments which can lead to other health problems like headaches
+- food was another problem as I dont have the habit of cooking for myself and in the past when I have cooked I have ended up wasting the ingredients sometimes.The food that I ate caused heartburns (buring feelings in esophagus and stomach) many times.
+- not sleeping before 1 am/ 12 am and staying up all night and then sleeping during the day
+- feeling tired during the day immidiately when I start to work on my assignment.
+#### Mistakes
+- poor time management 
+- lack of pre planning
+- running around unconsciuosly and ignoring important stuff
+- not taking out me time to think about these mistakes and how to remedy them 
+- 
 53. What have you learned from this course that you think might be useful in your career?
+#### life skills and lessons
+- Team working is great - there is something magical in working with people - it motivates you they can share their resources with you and you can work with them in harmonious way
+- cultivating good realtionships is essential to be successful and happy in life 
+- A good leader can change your life as he sets good standards and puts in good systems in place and helps you become a leader yourself (Kris did this for me) :) Thank You!! :)
+- I need to take some time every week and do a meeting with myself talking about any problems I am facing or any mistakes im making repetedly and how I can best fix and solve them.
+#### programming skills and lessons
+- Django,python,etc skills - I really like this new tecnology 
+- I like programming
+- I got to play with and learn about JS, ReactJS, AWS, and many other technologies
+- Github - issues and hwo to work in a team using github - i learnt that communication is really important - to understand your team and work smoothly.
+#### due to the lockdown
+- A Lockdown doesnt have to make us feel disconnected - we can still grow and communicate with our friends and work on our goals with other people online.
+- However we need to be prepared and be a part of groups (before the lockdowns/other big change) that we are part of and a place to find new people that we can be sane with.
