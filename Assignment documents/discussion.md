@@ -101,8 +101,16 @@ ORM helps us because we can migrate to another database easily
 redis is like a database but it only stores data temporarily 
 24. Why do we use caches? HTTP & REST: 
 25. Which four HTTP methods does REST use for performing CRUD operations?
+GET
+POST
+DELETE
+UPDATE
 26. What is Django REST Framework used for?
+the main purpose of DRF is to help make a REST  API for our django application server. 
+DRF provides a way to serialize and deserialize models much like the django forms.- we need this inorder to send and recieve data to and from our API
+DRF also provies a default router that  helps us make url patterns and we can specify permission levels for access to the api 
 27. What is serialization and why do we use it?
+
 28. Which type of object serialization notation is most commonly used on the web?
 29. What is Postman and what is it used for?
 30. What are websockets and what are they used for? Javascript: 
