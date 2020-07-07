@@ -150,10 +150,25 @@ react uses JSX which is like html but better as we can make our own custom compo
 VueJS
 Angular
 36. What is the DOM? What is a virtual DOM?
-
+oh Dom, hes one of my old friends
+DOM - its the document object model- its what is used by the browser to diaplay the various components like `<div>` or`<h1>` from the Html to the final renderd version
+traditilly the JS frameworks updated the DOM too much and so it was slow.
+so now we need a Virtual DOM that is a layer above the DOM in which only the component that needs to be updated will be updated and not the entire DOM
 37. What is the difference between sessionStorage and localStorage? 
-38. What is a library like Material-UI used for? Docker: 
+this is what i found from a youtube video by [Web Dev Simplified](https://www.youtube.com/watch?v=GihQAC1I39Q)
+![sessionStorage vs localstorage](https://i.imgur.com/mZOJOAw.png)
+so what I unserand is that this is a place to store user data in the browser.
+it isent accessable across different browsers
+session storage's scope is limited to the current tab in the browser and gets deleted when the tab is closed
+localStorage can store more data like 10 mb than sessionStorage (5mb)and local storage persistes until the user manually deletes it
+I think I used localStorages in my apps at https://goals.lakshaysethi.com
+38. What is a library like Material-UI used for? 
+Material UI has many premade ReactJS componets that we can use in our web apps 
+on their website they say that thier goal is making React UIs development easier, better, and accessible to more people.
+we can copy and past their code and modify it according to our requirements but they provide the building blocks for us to make the basic good looking components
+#### Docker: 
 39. Why do we run apt-get update && apt-get install -y in one command when using Docker? 
+
 40. What are Docker containers and what are the pros and cons of using them?
 41. What is the difference between ADD and COPY with Docker?
 42. What is a .dockerignore file used for?
