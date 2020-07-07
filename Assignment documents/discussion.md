@@ -94,7 +94,11 @@ Makes it easy to migrate data between different databases
 Cons
 Complex queries can lead to performance issues
 22. What is the purpose of database migrations?
+when we run the makemigrations in django command then new changes we made in our models/classes get reflected in the data base as new  tables and/or new fields(columns)
+ if we are running this for the first time then in a new database all the tables will be setup for use by the backend
+ORM helps us because we can migrate to another database easily
 23. What is redis and what are two things it can be used for?
+redis is like a database but it only stores data temporarily 
 24. Why do we use caches? HTTP & REST: 
 25. Which four HTTP methods does REST use for performing CRUD operations?
 26. What is Django REST Framework used for?
