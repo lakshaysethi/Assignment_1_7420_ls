@@ -34,29 +34,80 @@
 8. What are some of the pros and cons of using Platform-as-a-Service (PaaS) providers such as Heroku?
     #### pros 
     - quick to setup and host/deploy simple apps
-    - easy/ has lots of support from the service provider - and sometimes has arge number of users so it can be 
+    - easy/ has lots of support from the service provider - and sometimes has large number of users so it can be easy to find answers to problems and to debug
     #### cons
     - does not support or have all the features that IaaS might offer (limited capability)
     - expensive
 9.  What are some of the pros and cons of using Infrastructure-as-a-Service providers such as Amazon?
     #### pros 
-    - 
+    - is cheaper than PaaS
+- easier to scale
+- many more services than PaaS are available at a good price
     #### cons
-    - 
+    - it can be complicated to set up for the general user.
+- companies try to lock down a customer with their setup time investment and complex setup.
 ## Web Frameworks
 10. What is Django?
+- it is a python web framework- which can be used to build both an api just -backend and also a complete package (Front and back)
 11. What are some of its useful features? 
+    - ORM
+    - Forms
+    - Templates and views
+    - admin backend 
+
 12. What is a model?
+    - it is like a class - when we make a class diagram we can make all models exacly as the classes in the class diagram 
+    - we can make custom models for any kind of object we want in our app
+    - 
 13. What is a view?
+    - these are functions that are run when a URL is used to send a request to the server. Eg when we make a post request to the server using the URL pattern like Mysite.com/make-post/ then the function attached to it (the view) will be run
+
 14. Name two other popular non-Python web frameworks.
+Laravel for php
+Spring for Java
 15. What is WSGI?
+Web server gateway interface, it is a convention that needs to be used by web servers to forward requests to the python code that runs a web app.
 16. What is ASGI?
+This is a cooler version of WSGI it basically does the same thing but also supports asynchronous python 
 17. What is celery and what are task queues used for?
+Celery is a vegetable that all students need to eat to be able to get the vitamins needed to do programming.
+Jk
+Celery is a task queue
+
+The way I understand it is that is like a list made by a waiter at a restaurant. The waiter takes orders from the customers as they come
+
+This waiter is using digital list.
+The kitchen staff is like a worker that makes the dishes one by one.
+Celery is a list of tasks (but works as a queue data structure ) and workers keep checking the list for new tasks and do them.
+
+Tasks can be like sending an email or more complex which take more than a few milliseconds
+
+Like processing a video.
+The main reason I use it is to make my websites perform better and for a better UX. As I don't want to keep the users waiting and have no feedback about what's going on when the tasks are taking long
 ## Databases
 18. What is PostgreSQL?
+Its an open source relational  database management system.
+
 19. Using StackShare, list 3 well-known companies that use PostgreSQL. 
+Uber
+Netflix
+Instagram
+Stackshare
+
 20. List two other well-known databases.
+Firebase firestore
+mysql
+Sqlite
+Mongodb
 21. What are some of the pros and cons of using an Object Relational Mapper (ORM)?
+
+Pros
+Don't have to write the SQL queries for the relationship for the models or classes in our app.
+Makes it easy to migrate data between different databases
+
+Cons
+Complex queries can lead to performed issues
+
 22. What is the purpose of database migrations?
 23. What is redis and what are two things it can be used for?
 24. Why do we use caches? HTTP & REST: 
