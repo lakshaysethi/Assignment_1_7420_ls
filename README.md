@@ -1,4 +1,3 @@
-Current status: Not finished, still working on the assignment.
 
 The app is hosted in heroku  here : http://instaclone.lakshaysethi.com/
 and the app running from a docker image in google cloud  is hosted here: http://insta-docker.lakshaysethi.com/
