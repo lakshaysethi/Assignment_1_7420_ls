@@ -2,4 +2,3 @@
 venv/
 .idea/
 .env
-frontend-react/node_modules
