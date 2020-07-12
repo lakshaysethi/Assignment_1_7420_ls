@@ -1,18 +1,24 @@
-The app is hosted here : http://instaclone.lakshaysethi.com/
 
-# Assignment-1-7420-ls
+The app is hosted in heroku  here : http://instaclone.lakshaysethi.com/
+and the app running from a docker image in google cloud  is hosted here: http://insta-docker.lakshaysethi.com/
+and the app running from a docker image in AWS is hosted here: http://insta-docker-aws.lakshaysethi.com/
+
+[discussion](https://github.com/lakshaysethi/Assignment_1_7420_ls/edit/Assignment-2/Assignment%20documents/discussion.md)
+
+# About InstaClone - Assignment-7420
 
 this is the Lakshay's simple instagram web app 
 Features implemented:
-1. user login and registrations so if users want to keep some photos private they can
+1. user login and registrations 
 2. user being able to upload photos to this app
-3. ability to like images and keeping a view count and a like count in database
+3. ability to like images 
 4. using aws s3 for image storage or other image storage solution
-5. email notifications ( paritally implemented 4 may 2020)
-6. service worker browser notifications 
-7. postgresSQL and redis
+5. email notifications 
+6. search photos by title description
 
 Features yet to be implemented 
+- keeping a view count and a like count in database
+- if users want to keep some photos private they can
 - ads //model 1
 - comments on posts // model 2
 - chat/dms // model 3
@@ -41,6 +47,9 @@ Features yet to be implemented
 possible featres
 1. comments
 2. search photos by title description
+- service worker browser notifications 
+- postgresSQL and redis
+- comments
 
 
 class Diagram will look somwhat like this:

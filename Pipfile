@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pylint = "*"
 
 [packages]
 amqp = "==2.5.2"
@@ -47,6 +48,7 @@ Pillow = "==7.1.2"
 Pygments = "==2.6.1"
 PyYAML = "==5.3.1"
 Werkzeug = "==1.0.1"
+djangorestframework = "*"
 
 [requires]
 python_version = "3.8"

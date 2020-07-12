@@ -25,13 +25,13 @@ SECRET_KEY = '1i*ddp+2$-+ylh)s!g)b^l)*cgan8@yi-_^^5=1j)mp=k@rpjt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['insta-docker-aws.lakshaysethi.com','insta-docker.lakshaysethi.com','instaclone.lakshaysethi.com','instals.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['insta-docker-aws.lakshaysethi.com','insta-docker.lakshaysethi.com','instaclone.lakshaysethi.com','instals.herokuapp.com','react-s3-a2.lakshaysethi.com','127.0.0.1','localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-
+    'rest_framework',
     'instaLS.apps.InstalsConfig',
     'crispy_forms',
     'django_werkzeug',
@@ -80,26 +80,25 @@ WSGI_APPLICATION = 'Assignment_1_7420_ls.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-# postgres://tvejastaqjnrik:8054853d2a281930d86495649afbf3dcead456072b6ee4d4cccf371112754ae3@ec2-3-216-129-140.compute-1.amazonaws.com:5432/d6g38qj54uqh4n
-
-DATABASES = {   
+DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'ec2-3-216-129-140.compute-1.amazonaws.com',
-        'NAME': 'd6g38qj54uqh4n',
-        'USER': 'tvejastaqjnrik',
-        'PORT':'5432',
-        'PASSWORD':'8054853d2a281930d86495649afbf3dcead456072b6ee4d4cccf371112754ae3',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
+# DATABASES = {   
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'HOST': 'ec2-52-44-55-63.compute-1.amazonaws.com',
+#         'NAME': 'd6e2tirm7t9i3g',
+#         'USER': 'yvosenamazwswo',
+#         'PORT':'5432',
+#         'PASSWORD':'74c3bb0327b76eaa8cf8648f1b6ef735d331ed48136dcf2da65cd16ae136b4a5',
+#     }
+# }
 
+#
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
