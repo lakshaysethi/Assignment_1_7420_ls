@@ -5,6 +5,11 @@ and the app running from a docker image in AWS is hosted here: http://insta-dock
 
 [discussion](https://github.com/lakshaysethi/Assignment_1_7420_ls/edit/Assignment-2/Assignment%20documents/discussion.md)
 
+
+insta-docker-aws.lakshaysethi.com  has an A record for  
+S3 bucket used  is http://3.25.65.141/
+react-s3-a2.lakshaysethi.com.s3-website-ap-southeast-2.amazonaws.com
+
 # About InstaClone - Assignment-7420
 
 this is the Lakshay's simple instagram web app 
