@@ -7,7 +7,9 @@ and the app running from a docker image in AWS is hosted here: http://insta-dock
 
 
 insta-docker-aws.lakshaysethi.com  has an A record for  
-S3 bucket used  is http://3.25.65.141/
+3.25.65.141
+
+S3 bucket used  is:
 react-s3-a2.lakshaysethi.com.s3-website-ap-southeast-2.amazonaws.com
 
 # About InstaClone - Assignment-7420
