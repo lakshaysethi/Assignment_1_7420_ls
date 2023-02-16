@@ -47,7 +47,7 @@ Django = "==3.0.6"
 Pillow = "==7.1.2"
 Pygments = "==2.6.1"
 PyYAML = "==5.3.1"
-Werkzeug = "==1.0.1"
+Werkzeug = "==2.2.3"
 djangorestframework = "*"
 
 [requires]
